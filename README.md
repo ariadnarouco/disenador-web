@@ -14,10 +14,7 @@
     * Combined lists
     * List items as links
     * Blog #5
-    * Quiz
-      * Quiz #1
-      * Quiz #2
-      * Quiz #3
+    * Trabajo práctico
   * Enlaces
   * Tablas
   * Formularios
