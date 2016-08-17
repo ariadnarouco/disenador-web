@@ -2,8 +2,23 @@
 
 * HTML - **2 clases**
   * Estructura HTML 
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #1
+    * Trabajo práctico
   * Etiquetas semánticas HTML5
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #2
+    * Trabajo práctico
   * Textos, Heading
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #3
+    * Trabajo práctico
   * Listas 
     * Identation 
     * Ordered lists
@@ -13,12 +28,32 @@
     * Unordered lists
     * Combined lists
     * List items as links
-    * Blog #5
+    * Blog #4
     * Trabajo práctico
   * Enlaces
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #5
+    * Trabajo práctico
   * Tablas
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #6
+    * Trabajo práctico
   * Formularios
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #7
+    * Trabajo práctico
   * Atributos en tags HTML
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #8
+    * Trabajo práctico
   
 * CSS
   * Historia
