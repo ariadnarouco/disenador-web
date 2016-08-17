@@ -5,19 +5,19 @@
   * Etiquetas semánticas HTML5
   * Textos, Heading
   * Listas
-   * Identation
-   * Ordered lists
-   * List items
-   * Marker types
-   * Descending order
-   * Unordered lists
-   * Combined lists
-   * List items as links
-   * Blog #5
-   * Quiz
-     * Quiz #1
-     * Quiz #2
-     * Quiz #3
+    * Identation
+    * Ordered lists
+    * List items
+    * Marker types
+    * Descending order
+    * Unordered lists
+    * Combined lists
+    * List items as links
+    * Blog #5
+    * Quiz
+      * Quiz #1
+      * Quiz #2
+      * Quiz #3
   * Enlaces
   * Tablas
   * Formularios
