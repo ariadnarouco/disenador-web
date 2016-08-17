@@ -1,11 +1,11 @@
 # Diseno-Web-Nivel-1
 
 * HTML
-  * Estructura HTML
+  * Estructura HTML ( inicio de clase 1 )
   * Etiquetas semánticas HTML5
-  * Textos, Heading
-  * Listas - ( Clase 1 )
-    * Identation
+  * Textos, Heading ( fin de clase 1 )
+  * Listas 
+    * Identation ( inicio de clase 2 )
     * Ordered lists
     * List items
     * Marker types
@@ -21,7 +21,7 @@
   * Enlaces
   * Tablas
   * Formularios
-  * Atributos en tags HTML ( Clase 2 )
+  * Atributos en tags HTML ( fin de clase 2 )
   
 * CSS
   * Historia
