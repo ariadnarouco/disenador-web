@@ -4,7 +4,7 @@
   * Estructura HTML
   * Etiquetas semánticas HTML5
   * Textos, Heading
-  * Listas
+  * Listas - ( Clase 1 )
     * Identation
     * Ordered lists
     * List items
@@ -21,7 +21,7 @@
   * Enlaces
   * Tablas
   * Formularios
-  * Atributos en tags HTML
+  * Atributos en tags HTML ( Clase 2 )
   
 * CSS
   * Historia
