@@ -32,13 +32,102 @@ Contenido del programa
   * Fuentes, colores
   * Recursos: Google Font, Ionicons
  
-* CSS (clase 4)
+* CSS - Modelo de Cajas & Ubicación de elementos (clase 4)
   * Definición
   * Bordes
   * Márgenes
   * Relleno
   * Fondo
+  * Posicionamiento
+  * Float
+  * Flexbox
+ 
+* CSS - Ubicación de elementos 2 & más! (clase 5)
+  * Más sobre Flexbox
+  * Propiedades de padres e hijos
+  * Gradientes en CSS
+  * Transiciones
+  * Transformación
+  * Animación en CSS
+ 
+* CSS - Diseño Responsivo, Media Queries, Git.Github (clase 6)
+  * ¿Qué es un diseño responsivo?
+  * Pantallas en que enfocarse
+  * Mobile-First
+  * Utilización dentro de un archivo CSS
+  * Utilización en la llamada desde el <head>
+  * Github
+  * Crear una cuenta
+  * Crear un repositorio
+  * Clonar un repositorio
+  * Subir cambios al repositorio remoto
+ 
+* Workshop 1 (clase 7)
+ 
+* SASS (clase 8)
+  * Definición
+  * Instalación
+  * Variables
+  * Anidamiento
+  * Importar
+  * Mixins
+  * Extensiones a partir de un elemento
+  * Operadores matemáticos
 
-2. CSS – Ubicación
+* LESS & SEO Tips(clase 9)
+  * Instalación
+  * Variables
+  * Anidamiento
+  * Importar
+  * Mixins
+  * Extensiones a partir de un elemento
+  * Operadores matemáticos
+  * Comparación SASS - LESS
+  * SEO Tips (primera parte)
+
+* Bootstrap & SEO Tips (clase 10)
+  * Qué son los frameworks CSS
+  * Función
+  * Utilización
+  * Instalación/CDN
+  * Grilla Responsive
+  * Clases de Bootstrap
+  * Componentes
+  * Customizar Bootstrap
+  * Cómo pisar clases de bootstrap
+  * SEO Tips (segunda parte)
+
+* Bootstrap (jQuery) & SEO Tips (clase 11)
+  * Componentes jQuery de Bootstrap
+  * SEO Tips (tercera parte)
+
+* Workshop 2 (clase 12)
+
+* Accesibilidad & SEO Tips (clase 13)
+  * Pautas de Accesibilidad al Contenido del W3C
+  * Elementos
+    * Visión
+    * Audición
+    * Movilidad y Cognición
+    * Leedores de pantalla
+    * Maquetas de baja fidelidad
+      * HTML
+      * CSS
+      * Formularios
+    * Tablas
+  * SEO Tips (cuarta parte)
+ 
+* Fundamentos Web & SEO Tips (clase 14)
+  * Validación
+  * Navegadores
+  * Dominios
+  * Hosting (Nacionales e Internacionales)
+  * Protocolo de transferencia de archivos (FTP)
+  * Github Pages
+  * SEO Tips (quinta parte)
+
+* Proyecto Final - Primera parte (clase 15)
+  
+* Proyecto Final - Segunda parte (clase 16)
   
   
