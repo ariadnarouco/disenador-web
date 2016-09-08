@@ -1,125 +1,44 @@
 # Diseno Web Nivel 1
 Contenido del programa
 
-* HTML - **2 clases**
+* Del Bosquejo al Código & HTML (clase 1)
+  * Cómo interpretar un diseño
+  * Diseño (Photoshop vs Mockups)
   * Estructura HTML 
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #1
-    * Trabajo práctico
+  * Etiquetas Básicas:
+    * Textos
+    * Encabezados
+    * Div y Span
   * Etiquetas semánticas HTML5
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #2
-    * Trabajo práctico
-  * Textos, Heading
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #3
-    * Trabajo práctico
-  * Listas 
-    * Identation 
-    * Ordered lists
-    * List items
-    * Marker types
-    * Descending order
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #4
-    * Trabajo práctico
-  * Enlaces
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #5
-    * Trabajo práctico
-  * Tablas
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #6
-    * Trabajo práctico
-  * Formularios
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #7
-    * Trabajo práctico
-  * Atributos en tags HTML
-    * Unordered lists
-    * Combined lists
-    * List items as links
-    * Blog #8
-    * Trabajo práctico
   
-* CSS
+* HTML (clase 2)
+  * Listas
+  * Tablas
+  * Formularios
+  * ¿Qué son los atributos de un tag?
+  * ¿Para qué sirven?
+  * Atributos más utilizados
+  * Enlaces
+  * Imágenes
+  * Audio y Videos
+ 
+* CSS (clase 3)
   * Historia
-  * Estructura
+  * Sintaxis, Comentarios, Carga de Archivos CSS
+  * Uso de ‘Normalize.css’
   * Selectores
   * Clases
   * Valores y Unidades
   * Fuentes, colores
   * Recursos: Google Font, Ionicons
-  * Fondos y Bordes
-  * Modelo de cajas
-  * Posicionamiento
-  * Flexbox
-  * Gradientes CSS
-  * Transiciones y Transformaciones
-  * Animaciones CSS
-  * Diseño Responsivo
-  * Mediaqueries
-  
-* SASS
+ 
+* CSS (clase 4)
   * Definición
-  * Instalación
-  * Variables
-  * Anidamiento
-  * Importar
-  * Mixins
-  * Extensiones a partir de un elemento
-  * Operadores matemáticos
-  
-* LESS
+  * Bordes
+  * Márgenes
+  * Relleno
+  * Fondo
 
-* BOOTSTRAP
-  * Instalación / CDN
-  * Markup
-  * Clases de Bootstrap
-  * Grilla responsive
-  * Componentes
-  * Customizar Bootstrap
-  * Cómo pisar clases de bootstrap
-  * Componentes Jquery de Bootstrap
+2. CSS – Ubicación
   
-* ACCESIBILIDAD
-  * Visión
-  * Audición
-  * Movilidad y Cognición
-  * Leedores de pantalla
-  * Maquetas de baja fidelidad
-  * HTML
-  * CSS
-  * Formularios
-  * Tablas
   
-* FUNDAMENTOS WEB
-  * Validación
-  * Navegadores
-  * Dominios y alojamiento
-  * Protocolo de transferencia de archivos
-  * Servicios alojados
-  
-* SEO
-  * Optimizacion On Page
-  * Optimizacion para motores de busqueda
-  
-* GIT/GITHUB
-  * Crear una cuenta
-  * Crear un repositorio
-  * Clonar repositorios en local
-  * Subir cambios al repositorio remoto
