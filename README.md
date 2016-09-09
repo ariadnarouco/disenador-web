@@ -3,7 +3,7 @@
 ## Requisitos:
 - Completar el curso de [HTML y CSS de Codecademy]  (<https://www.codecademy.com/learn/web>)
 
-
+------------
 
 * Del Bosquejo al Código & HTML (clase 1)
   * Cómo interpretar un diseño
