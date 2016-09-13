@@ -75,7 +75,7 @@
   
 ------------ 
 
-## Workshop I :large_blue_circle:
+## :star: Workshop I :star:
 
 ------------
  
@@ -126,7 +126,7 @@
 
 ------------
 
-## Workshop II :large_blue_circle:
+## :star: Workshop II :star:
 
 ------------
 
@@ -159,6 +159,6 @@
 
 --------------
 
-## Proyecto Final :checkered_flag:
+## :checkered_flag: Proyecto Final :checkered_flag:
 
 --------------
