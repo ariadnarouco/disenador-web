@@ -1,7 +1,7 @@
 # Diseñador Web - Certificación 
 
 ## Beginner
-* Empezando con tu portfolio
+* Challenge 1: [Empezando con tu portfolio] (<>).
 
 ## Intermediate
 * Próximamente
