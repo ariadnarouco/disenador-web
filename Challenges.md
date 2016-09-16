@@ -1,6 +1,6 @@
 # Diseñador Web - Certificación 
 
-## Beginner (Ejmplos del nivel 2)
+## Beginner (Ejemplos del nivel 2)
 * Challenge 1: [Nombre y Operaciones] (<https://github.com/CoderHouse/programa-programador-web-nivel-2/blob/master/challenge01.md>)
 * Challenge 2: [Días de la semana] (<https://github.com/CoderHouse/programa-programador-web-nivel-2/blob/master/challenge02.md>)
 * Challenge 3: [Pequeñas funciones] (<https://github.com/CoderHouse/programa-programador-web-nivel-2/blob/master/challenge03.md>)
