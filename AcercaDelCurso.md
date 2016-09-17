@@ -1,6 +1,6 @@
 # Acerca del curso
 
-Conviertete en Diseñador Web con nuestro Curso de Fundamentos Web y nuestro moderno plan de estudio que incluye las últimas tecnologías: HTML5, GIT, GITHUB CSS3, SAAS, Bootstrap, Accesibilidad, SEO, Hosting y Servidores Web.
+Conviertete en Diseñador Web con nuestro Curso de Fundamentos Web y nuestro moderno plan de estudio que incluye las últimas tecnologías: **HTML5**, **CSS3**, **GITHUB** , **SAAS**,**LESS**, **Bootstrap**, **Accesibilidad**,**SEO**,**Hosting** y **Servidores Web**.
 
 Este curso te permitira:
 
