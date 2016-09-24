@@ -19,7 +19,7 @@
 
 ```<pre>```: Define un texto con formato pre definido, con texto justificado, tipografía Courier y respeta espacios y saltos de línea. 
  
- ## Tags Formato
+## Tags Formato
  
  ```<b>```: Define el texto en <b>Negrita</b>.
 
