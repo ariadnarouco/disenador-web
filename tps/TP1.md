@@ -17,3 +17,10 @@
 * [Primer sitio web en internet] (<>)
 
 
+_______
+
+# Resolución
+
+
+
+
