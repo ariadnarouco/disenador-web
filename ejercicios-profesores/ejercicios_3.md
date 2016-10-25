@@ -1,11 +1,12 @@
 * Crear un archivo CSS y un parrafo.
-
+***CSS***
 ````css
 p {
     color: red;
     text-align: center;
 }
 ````
+***HTML***
 ````html
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed metus tempus, pretium purus vitae, congue sem. 
