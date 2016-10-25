@@ -13,7 +13,7 @@
     </html>
 ````
 
-*** Crear una cuenta en Github.com ***
+***Crear una cuenta en Github.com***
 
 * Crear un repositorio en Github.com
 * Clonar repositorio.
