@@ -24,12 +24,16 @@ Aliquam erat volutpat. Nullam ultrices sed libero sit amet commodo. Curabitur po
 
 * Luego utilizar un ID para1
 
+***CSS***
+
 ````css
 #para1 {
     text-align: center;
     color: red;
 }
 ````
+***HTML***
+
 ````html
 <div id="para1">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
