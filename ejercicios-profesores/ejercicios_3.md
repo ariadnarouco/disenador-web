@@ -39,4 +39,29 @@ Aliquam erat volutpat. Nullam ultrices sed libero sit amet commodo. Curabitur po
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ````
-* 
+
+* Agregar fuentes y estilos a un parrafo.
+
+***CSS***
+
+````css
+p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: italic; }
+````
+
+* Agregar fuentes de Google Fonts
+
+````html
+<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+````
+````css
+h1 { font-family: 'Euphoria Script', cursive; }
+````
+
+* Agregar iconos 
+
+````html
+<link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+````
+````html
+<i class="icon ion-checkmark-round></i>
+````
