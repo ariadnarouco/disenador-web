@@ -1,4 +1,4 @@
-# Diseno Web Nivel 1
+# Diseño Web Nivel 1
 
 ## Acerca del curso
 
