@@ -72,10 +72,10 @@ li {display: inline;}
 <body>
 
 <ul>
-  <li><a href="#">Link one</a></li>
-  <li><a href="#">Link two</a></li>
-  <li><a href="#">Link three</a></li>
-  <li><a href="#">Link four</a></li>
+  <li><a href="#">Enlace 1</a></li>
+  <li><a href="#">Enlace 2</a></li>
+  <li><a href="#">Enlace 3</a></li>
+  <li><a href="#">Enlace 4</a></li>
 </ul>
 
 </body>
