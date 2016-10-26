@@ -1,6 +1,6 @@
 # Summary
 
-* Acerca del Curso
+* [Acerca del Curso](README.md)
 * Destinatarios
 * Pre-requisitos
 * Temario
