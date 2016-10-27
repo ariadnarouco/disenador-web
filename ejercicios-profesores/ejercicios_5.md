@@ -152,3 +152,13 @@
 </html>
 
 ````
+
+* Podemos variar los ejercicios anteriores con variaciones de las propiedades.
+
+```
+justify-content: flex-start | flex-end | center | space-between | space-around;
+```
+
+```
+flex-direction: row | row-reverse | column | column-reverse;
+```
