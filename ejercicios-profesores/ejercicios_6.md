@@ -28,7 +28,7 @@
 
 * Crear un gradiente con transparencia.
 
-````htmll
+````html
 
 <!DOCTYPE html>
 <html>
@@ -51,7 +51,5 @@
 
 </body>
 </html>
-
-
 
 ````
