@@ -53,3 +53,32 @@
 </html>
 
 ````
+
+* Crear un ejemplo rotando un elemento.
+
+````html
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    /* Rotate div */
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+</style>
+</head>
+<body>
+
+<div>Hola</div>
+<br>
+
+</body>
+</html>
+
+````
