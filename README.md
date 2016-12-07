@@ -6,6 +6,11 @@ Con el curso de Diseñador Web podrás realizar páginas web interactivas usando
 
 
 ## Información
+
+* 56 horas
+* 8 semanas
+* 12 challenges
+* 12 trabajos prácticos
 * Días:
  * Lunes y Miércoles
  * Martes y Jueves 
@@ -14,7 +19,3 @@ Con el curso de Diseñador Web podrás realizar páginas web interactivas usando
  * Mañana: 9:30 - 13:00
  * Noche: 18:30 - 22:00
  * Turno sábados: 9:30 - 16:30
-* 56 horas
-* 8 semanas
-* 12 challenges
-* 12 trabajos prácticos
