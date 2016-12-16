@@ -1,6 +1,6 @@
 # Summary
 
-* [Acerca del Curso](README.md)
+* [Acerca del curso](README.md)
 * [Después del curso](despues-del-curso.md)
 * [Destinatarios](destinatarios.md)
 * [Requisitos](requisitos.md)
