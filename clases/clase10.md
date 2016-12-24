@@ -1,235 +1,718 @@
-# Mixins
-Nos permiten definir estilos que puedan ser reutilizados en nuestro proyecto, sin necesidad de recurrir a las clases helpers que ya comentamos, también pueden contener complejas reglas de CSS.
+# Introducción
+​
+Bootstrap es un framework desarrollado por Twitter que te permite maquetar una interfaz web con HTML, CSS y JavaScript. La pieza generada con dicha plataforma se adapta automáticamente dependiendo del tamaño del dispositivo en el que se visualice, es decir, se adapta al tamaño del navegador de una computadora de escritorio, un celular o una Tablet sin intervención del usuario. A esto se lo denomina diseño adaptable o Responsive Design.
+​
+Los diseños creados con Bootstrap son simples, limpios e intuitivos, esto ayuda en la velocidad en que carga la web.
+​
+El Framework cuenta con varios elementos y estilos predefinidos, los cuales pueden ser modificados de una manera muy simple: Botones, Menus desplegables, Formularios incluyendo todos sus elementos e integración jQuery para ofrecer ventanas y tooltips dinámicos.
 
-### Cómo usar los Mixins en Sass:
+# Instalar Bootstrap
 
-Para crearlos debemos utilizar ```@``` seguido de ```mixin``` y por último el nombre que queramos darle al mixin. Luego, para declararlo dentro de un componente, usamos ```@include```, seguido de un espacio, el nombre y por último entre paréntesis ```()``` escribimos los argumentos requeridos por nuestro Mixin. Los argumentos son opcionales.
+Acceder a [http://getbootstrap.com/](http://getbootstrap.com/) y descargar el framework.
 
-Por ejemplo, para evitar la repetición de alto y ancho de un componente a lo largo de un proyecto, podemos crear un pequeño Mixin que transforme las habituales dos líneas de código en una sola:
+Te encontrarás con la siguiente estructura:
 
-```
-@mixin sizes($width, $height: $width) {
-  height: $height;
-  width: $width;
-}
- 
-.box {
-  @include sizes(100px);
-}
-```
+```bootstrap/
+    css/
+        bootstrap.css
+        bootstrap.min.css
+        bootstrap-responsive.css
+        bootstrap-responsive.min.css
+    img/
+        glyphicons-halflings-white.png
+        glyphicons-halflings.png 
+    js/
+        bootstrap.js
+        bootstrap.min.js```
 
-# Extends / Placeholders:
+Como verán, cada archivo se tiene dos variantes, los archivos compilados (bootstrap.*) y los archivos compilados y además comprimidos (bootstrap.min.*), agregándose la palabra “min” que hace referencia a “minificado”. También se incluyen dos imágenes con los iconos de Glyphicons en color blanco y color negro.
 
-Es una de las más poderosas características de Sass. Nos permite crear un fragmento de estilos que luego podamos reutilizar fácilmente en cualquier componente.
+# Compatibilidad de Bootstrap
 
-### Cómo usarlo:
-Para declarar y crear un fragmento de estilos que necesitamos reutilizar, usamos ```%``` seguido de un nombre, sin espacios. Luego, para imprimir o reutilizar el Extend dentro de un componente, usamos ```@extend``` seguido de un espacio y por último, el nombre que asignamos a nuestro fragmento.
+Nunca hay que pasar por alto la comprobación de si la tecnología que estamos aplicando es compatible con los navegadores más usados por los usuarios que visitarán nuestro sitio.
 
-Por ejemplo, si queremos crear un componente básico para imprimir mensajes del sistema, debemos tener una clase para mensajes exitosos, de advertencia y de errores. 
+![](https://coderhouse.gitbooks.io/bootstrap/content/captura-6.png)
 
-```
-// vars
-$bg-success: green;
-$bg-error: red;
-$bg-warning: orange;
- 
-// extend
-%message {
-  border-radius: 2px;
-  color: white;
-  padding: 5px;
-  text-align: center;
-}
- 
-.message-success {
-  @extend %message;
-  background-color: $bg-success;
-}
- 
-.message-error {
-  @extend %message;
-  background-color: $bg-error;
-}
- 
-.message-warning {
-  @extend %message;
-  background-color: $bg-warning;
-```
+También suele funcionar correctamente en Chromium (Linux) e Internet Explorer 7, aunque no está información no está oficializada por el sitio web.
 
+Los navegadores Internet Explorer 8 y 9 son soportados, algunas propiedades de CSS3 y tags de HTML5 que no funcionan como lo esperado. Además, Internet Explorer 8 requiere el uso de la librería respond.js para que el diseño web responsive funcione de manera adecuada.
 
-###### Sass nos imprimirá el siguiente CSS:
+![](https://coderhouse.gitbooks.io/bootstrap/content/captura-7.png)
+
+# Utilizando Bootstrap
+
+A continuación se visualiza un archivo html en donde se puede ver como se utilizan diferentes elementos con las propiedades que brinda Bootstrap.
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/dYboyL/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/dYboyL/'>Bootstrap - 6.4</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+Deberíamos estar visualizando un sitio como este:
+
+![](https://coderhouse.gitbooks.io/bootstrap/content/captura-5.png)
+
+Para visualizar correctamente este archivo utilizando las clases de Bootstrap se debe respetar la siguiente estructura de directorios.
 
 ```
-.message-success, .message-error, .message-warning {
-  border-radius: 2px;
-  color: white;
-  padding: 5px;
-  text-align: center;
-}
- 
-.message-success {
-  background-color: green;
-}
- 
-.message-error {
-  background-color: red;
-}
- 
-.message-warning {
-  background-color: orange;
-}
-```
+index.html
+css/
+    bootstrap.css
+    bootstrap-responsive.css
+js/
+    	bootstrap.js```
 
-Sass, agrupará las clases o atributos que tengan estilos comunes, evitando repetirlos por separado.
+Ahora vamos a analizar cada uno de los elementos que son clave a la hora de utilizar y entender Bootstrap. 
 
-# Operadores:
-
-Realizar operaciones matemáticas en CSS, es posible gracias a Sass. Contamos con un puñado de operadores: (+, -, *, / y %) que trabajan de la misma forma que las operaciones matemáticas básicas.
-
-Por ejemplo, para crear un simple grid basado en 960px y que el ancho de cada elemento sea expresado en porcentajes:
+**Encabezado del documento**
 
 ```
-$wrap: 960px; 
- 
-article[role="main"] {
-  float: left;
-  width: 630px / $wrap * 100%;
-}
- 
-aside[role="complimentary"] {
-  float: left;
-  width: 330px / $wrap * 100%;
-}
-```
+<!DOCTYPE html>
+<html lang="en">
+  ...
+</html>```
 
-###### Sass nos imprimirá el siguiente CSS:
-```
-article[role="main"] {
-  float: left;
-  width: 65.625%;
-}
- 
-aside[role="complimentary"] {
-  float: left;
-  width: 34.375%;
-}
-```
+**Viewport Tag**
 
-De esta manera  tenemos un grid básico que nos permite estructurar nuestro contenido de una manera agradable en dos columnas.
+Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles.
 
-# BEM
+```<meta name="viewport" content="width=device-width, initial-scale=1">```
 
-La metodología de trabajo BEM (Block,Element,Modifier) que se implementa en las hojas de estilos de los sitios web, se puede definir como una buena practica para crear estilos de manera ordenada, fácil de entender y escalable cuando se utilizan desarrollos que deben ser trabajados por un equipo de personas y se trabajan sitios web de manera modular. Cuando se utiliza esta metodología, el uso de identificadores para los estilos visuales  en la estructura del HTML y dentro de las hojas de estilos deja de servir, ya que la metodología sugiere manejar todo el estilo visual del sitio web mediante el uso de clases; Solo se deben utilizar los identificadores cuando se va a ejecutar alguna acción mediante Javascript.
+**Normalize.css**
 
-Yandex es el buscador web más popular  en Rusia, incluso superando al poderoso Google. Este buscador se plantó y estructuró como un ecosistema de servicios web y soluciones online, en un momento de su potencial crecimiento sintió la necesidad de cambiar para mejorar su arquitectura frontend e implementar una metodología que les ayudase a tener su código de estilos rigurosamente estructurado, es así como en el 2010 surgió la idea de estructurar por medio de Bloques, Elementos y Modificadores (BEM), que va más que una metodología de arquitectura CSS, de hecho este es un marco completo para el sistema frontend  que incluye una serie de reglas y herramientas para un desarrollo frontend global.
+Para mejorar el render que realizarán los navegadores de nuestro sitio web, es recomendable utilizar normalize.css, un proyecto de Nicolas Gallagher y Jonathan Neal.
 
-Esta metodología sugiere una estructura para nombrar tus clases, basado en las propiedades del elemento en cuestión. Si alguna vez has visto un nombre de una clase como header_from-email eso es precisamente BEM en acción. Cuando utilices la metodología BEM, debes tomar en cuenta que solamente usarás nombres de clases (no IDs). Los nombres de clases te permiten repetir el nombre BEM si es necesario, y crear una estructura de código más consistente.
+Solo debemos incluir el archivo css que se encargará de resetear los estilos por defecto que tienen los navegadores, por ejemplo: ```body { margin: 0; }```
 
-# Ventajas y Desventaja
+**Contenedores**
 
---------------------
-
-## Ventajas
-
-* Permite el trabajo de módulos para reutilizar de una manera sencilla en el flujo del html.
-* Permite el trabajo entre varios desarrolladores ya que promueve la organización de una manera lógica en las hojas de estilos.
-* Se puede trabajar de manera muy sencilla con pre procesadores como SASS o STYLUS.
-
------------------
-
-## Desventajas
-
-* Las clases pueden quedar muy largas al momento de utilizar la metodología.
-
-# Bloque
-
-El bloque es un contenedor o contexto donde el elemento se encuentra presente. Piensa como si fueran partes estructurales de código más grandes. Puede que tengas un encabezado, pie de página, una barra lateral y un área de contenido principal; cada uno de estos sería considerado como un bloque. Mira la imagen de abajo:
-
-![](http://i.imgur.com/srDeDhQ.jpg)
-
-El bloque de elementos forma la raíz de la clase y siempre irá primero. Solo debes saber que una vez que has definido tu bloque, estarás listo para comenzar a nombrar tus elementos.
-
-# Elemento
-
-El elemento es una pieza de un bloque. El boque es el todo y los elementos son las piezas. Cada elemento se escribe luego del bloque conectado por dos barras bajas.
+Bootstrap utiliza dos tipos de contenedores:
 
 ```
-.block__element
-```
+<div class="container">
+  ...
+</div>
+.container```
 
-Es algo extraño al principio pero una vez que comienzas a usarlo te preguntarás cómo es que has escrito CSS sin usar BEM. La doble barra baja te permite visualizar, navegar rápidamente y manipular tu código.
-
-Aquí hay algunos ejemplos de cómo funciona la metodología de elementos:
-
-```
-.header__logo {} 
-.header__tagline {} 
-.header__searchbar {}
-.header__navigation {}
-```
-
-Como puedes ver, hay espacio para la creatividad y hacer de esta metodología tuya. En el ejemplo, "navigation" puede ser cambiado a "nav", "tagline" puede cambiarse a "tag" o "tagLine". El punto es mantener los nombres simples, claros, y precisos. No lo pienses demasiado, y solo porque tus hojas de estilos y html serán estáticos, no quiere decir que tengas que volver a repetir el mismo código. Actualizar el nombre de las clases no debería ser un problema cuando encuentras una mejor semántica que funcione (solo debes tratar de ser consistente y apegarte a ella). Los elementos se convertirán en el centro de los nombres de tus clases, y te ayudarán a entender cómo estructurar tus hojas de estilos y cómo manejar tu diseño.
-
-# Modificadores
-
-Cuando nombras una clase, la intención es ayudar a que ese elemento pueda ser repetido para que no tengas que escribir nuevas clases en otras áreas del sitio si los elementos de estilo son los mismos. Cuando necesitas modificar el estilo de un elemento específico, puedes usar un modificador. Para lograr esto, añades un doble guión -- luego del elemento (o bloque). Aquí tenemos un corto ejemplo:
+Tiene un ancho variable, que va a depender de la resolución de pantalla del usuario. Esto lo va averiguar bootstrap y va a setearle el ancho correspondiente. Por ejemplo, si el usuario utiliza una resolución de 1024x768, el ancho de ```.container``` va a ser de 970px de ancho.  
 
 ```
-.block--modifier {}
-.block__element--modifier {}
-```
+<div class="container-fluid">
+ ...
+</div>```
 
-Ten cuidado al usar los modificadores, recuerda que se quiere mantener todo más simple y no tener que repetir lo mismo o crear clases extras a menos que sea absolutamente necesario. Lo explicaremos con un código usando el encabezado del sitio como nuestro bloque:
+En este caso, cuando el contendor es fluid, el ancho siempre será de 100%, brindándonos la posibilidad renderizar un div full width.
 
-```
-.header__navigation {}
-.header__navigation--secondary {}
-```
+Una vez que tenemos el contenedor podemos, comenzamos a incluir el resto de los divs que utiliza el framework para lograr un sitio responsivo.
 
-Si estás usando una segunda navegación, lo más probable es que el diseño y espaciado no cambien, pero puede que la navegación secundaria tenga un color distinto. Puedes ya sea, duplicar los estilos originales, o mejor aún, usar un pre-procesador. Con Sass, podrías @extender el elemento principal (así el elemento secundario heredará todas las propiedades) y cambiar los estilos apropiados.
+El siguiente div a utilizar son los ```.row```, que serán las filas en donde dividiermos el contenido el bloque que va a reacomodar los divs de su interior, haciendolos más angosotos o anchos dependiendo siempre de la resolución del usuario, lo que nos permitirá reorganizar el contenido de nuestro sitio colocando las cajas por encima o por debajo, dendiendo de los estilos que hayamos utilizado.
 
-```
-.header__navigation { 
-background: #008cba; 
-    padding: 1rem 0; 
-    margin: 2rem 0; 
-    text-transform: uppercase; 
-    } 
-     
-.header__navigation--secondary { 
-    @extend .header__navigation;
-    background: #dfe0e0; 
-    }
-```
+Dentro de los divs  ```.col-xx-xx``` se incluirán los divs que dividirán el contenido en columnas, para ser reorganizadas.
 
-Es probable pensar que el nombre de la clase es muy largo.  Sin embargo, los nombres de las clases BEM son específicos, claros, fáciles de leer dentro del html, y comunican claramente para qué existen.
+# Tipografía en Bootstrap
 
-Una ventaja de los nombres de las clases cuando usamos BEM es que solo tienes que usar un nombre de clase por cada etiqueta html. Fíjate cómo funcionaría para la etiqueta "label". Selectores estándares:
+Todos los tags de ```<h1>``` a ```<h6>``` están estilados por Bootstrap. Como también se puede utilizar el tag ```<small>``` para mostrar un texto secundario:
 
-```
-.label .label-default {} 
-.label .label-alert {}
-```
-vs. selectores BEM:
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/bVbddw/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/bVbddw/'>Bootstrap - 6.6.1</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+Otro ejemplo de estilo de texto puede ser para destacar un párrafo como en el siguiente ejemplo:
+
+```<p class="lead">...</p>```
+
+Ver más ejemplos de texto con estilo en [http://getbootstrap.com/css/#type](http://getbootstrap.com/css/#type)
+
+# Sistema de grilla
+
+Bootstrap se basa en un sistema de grilla pensada para dispositivos móviles que permite el diseño responsive.
+
+La grilla se divide en 12 columnas, que varían su ancho dependiendo de la resolución del usuario móvil o de escritorio.
+
+Estas columnas se ubican siempre dentro de una fila, el div .row mencionado anteriormente, y se representan con la clase .col-md-4, por ejemplo, para indicar que la columna ocupará 4 lugares en la grilla, por lo tanto la mitad de la pantalla. .col-md-x indica que el div ocupará 4 columnas en un .container de 970px de ancho (usuario con resolución menor a 992px de ancho, un celular por ejemplo). Si quisieramos que el mismo div ocupe 6 columnas en un dispositivo de 480px de ancho, deberíamos aplicarle dos clases al div para indicarle un comportamiento para cada resolución, como se visualiza en el siguiente ejemplo:
 
 ```
-.label {}
-.label--alert {}
+<div class="container">
+   <div class="row">
+     <div class="col-md-4 col-xs-6">columna izquierda</div>
+   </div>
+</div>
 ```
 
-Los lenguajes como Sass (específicamente Scss) nos permiten rápidamente tener elementos, compartir los mismos estilos con pequeñas excepciones. El ejemplo de abajo nos evita duplicar estilos, mas bien cambiamos sólo lo necesario. Otro punto importante de la metodologéa BEM es que no tienes que combinar clases ambiguas como "panel panel-default col-md-3". Si utilizas un framework como Foundation puedes comenzar a nivelar las diferencias. Pero para un ejemplo simple, pongamos estilo a las etiquetas que acabamos de definir.
+Se entenderá mejor con la siguiente imagen:
+
+![](http://i.imgur.com/VHbdy3g.png)
+
+Para generar las columnas de la imágen con código html utilizando las clases de Bootstrap se utilizó el siguiente código:
 
 ```
-.label { 
-background: #eee; 
-    border-radius: 505; 
-    color: #333; 
-    font-size: 1rem; 
-    } 
-     
-.label--alert { 
-    @extend .label; 
-    background: #da4531; 
-    color: #fff; 
-    }
+<div class="container">
+  <div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+ </div>
+ <div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+ </div>
+ <div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+ </div>
+ <div class="row">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+ </div>
+</div>
+```
+
+La grilla puede ser de varios tamaños, como dijimos antes, esto va a depender de la resolución del usuario. A continuación les brindamos las medidas que utiliza el framework para reacomodar los divs con sus respectivas clases:
+
+![](http://i.imgur.com/lZDjreR.png)
+
+Poniendo en palabras lo que expresa la tabla de medidas de dispositivos:
+
+Si utilizamos la clase ```col-xs-4``` en un div, los estilos de esta clase serán cargados solo si la resolución del usuarios es menos a 768px de ancho.
+
+Al utilizar la clase ```col-sm-6```, obtendremos los estilos correspondientes solo si la resolución del dispositivo es mayor a 768px de ancho.
+
+Esto quiere decir que podemos nombrar un div con dos clases diferentes, que proporcionarán distintos estilos al mismo elemento, pero eso no nos preocupará, ya que solo se cargarán los estilos que correspondan según el dispositvo que está renderizando la página en ese momento.
+
+```<div class="col-md-4 col-sm-6">```
+
+De esta manera logramos que el elemento ocupe distintas columnas de la grilla, dependiendo de la resolución del usuario, sin agregar o modificar el archivo de estilos, lo cual ahorra mucho tiempo a la hora del ajuste responsivo.
+
+También se pueden ocupar algunas columnas de la grilla dejando un espacio libre a los costados. Para ello se utilizan las clases con offset: ```.col-md-offset-4```
+
+![](http://i.imgur.com/aU94saL.png)
+
+```
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+  <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
+```
+
+Explicando la imágen anterior, en la primer fila el div de la izquierda rellena 4 columnas del centro, en la segunda los dos divs rellenan las columnas del 1 al 3 y del 7 al 9, y en la tercer fila el div central ocupa 6 columnas, dejando el espacio 3 columnas vacías a su izquierda, y sin tener la necesidad de terminar de ocupar las 3 restantes.
+
+# Tablas en Bootstrap
+
+Entre otros elementos, las tablas también están estiladas por el framewoork como se ve en el siguiente ejemplo:
+
+![](https://coderhouse.gitbooks.io/bootstrap/content/captura-13.png)
+
+```
+<table class="table table-striped">
+  ...
+</table>```
+
+Ver más estilos de tablas en [http://getbootstrap.com/css/#tables](http://getbootstrap.com/css/#tables)
+
+# Formularios en Bootstrap
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/doxQZR/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/doxQZR/'>Bootstrap - 6.8.1 - 1</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/RPXqxx/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/RPXqxx/'>Bootstrap - 6.8.1 - 2</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/QbeJao/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/QbeJao/'>Bootstrap - 6.8.1 - 3</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/gpVQvz/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/gpVQvz/'>Bootstrap - 6.8.1 - 4</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/NqQEye/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/NqQEye/'>Bootstrap - 6.8.1 - 5</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/yNmQvm/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/yNmQvm/'>Bootstrap - 6.8.1 - 6</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/rVXQdO/?height=268&theme-id=14781&default-tab=html' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/rVXQdO/'>Bootstrap - 6.8.1 - 7</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+## Imágenes responsive
+
+![](https://coderhouse.gitbooks.io/bootstrap/content/captura-21.png)
+
+```
+<img src="..." alt="..." class="img-rounded">
+<img src="..." alt="..." class="img-circle">
+<img src="..." alt="..." class="img-thumbnail">```
+
+# Más información
+
+Se le recomienda al alumno mantenerse actualizado acerca del framework que se está utilizando para evitar posibles problemas de visualización y optimización del código.
+
+Ver más en  [http://getbootstrap.com/](http://getbootstrap.com/)
+
+# Dropdowns
+![](http://i.imgur.com/V5tNZ8y.jpg)
+```
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" 
+
+aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
+
+# Headers
+![](http://i.imgur.com/8wgX24t.jpg)
+```
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+  ...
+  <li class="dropdown-header">Dropdown header</li>
+  ...
+</ul>
+```
+
+# Divider
+![](http://i.imgur.com/LYDY0bj.jpg)
+```
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+  ...
+  <li role="separator" class="divider"></li>
+  ...
+</ul>
+```
+
+# Disabled menu items
+![](http://i.imgur.com/tAZvmQ4.jpg)
+```
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+  <li><a href="#">Regular link</a></li>
+  <li class="disabled"><a href="#">Disabled link</a></li>
+  <li><a href="#">Another link</a></li>
+</ul>
+```
+
+# Button groups
+![](http://i.imgur.com/ZHa5dAE.jpg)
+```
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+```
+
+# Button toolbar
+![](http://i.imgur.com/AS0Tggh.jpg)
+```
+<div class="btn-toolbar" role="toolbar" aria-label="...">
+  <div class="btn-group" role="group" aria-label="...">...</div>
+  <div class="btn-group" role="group" aria-label="...">...</div>
+  <div class="btn-group" role="group" aria-label="...">...</div>
+</div>
+```
+
+# Sizing
+![](http://i.imgur.com/Iojk8ci.jpg)
+```
+<div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
+<div class="btn-group" role="group" aria-label="...">...</div>
+<div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+<div class="btn-group btn-group-xs" role="group" aria-label="...">...</div>
+```
+
+# Nesting
+![](http://i.imgur.com/IVnyQmG.jpg)
+```
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+# Vertical variation
+![](http://i.imgur.com/JtaTFJa.jpg)
+```
+<div class="btn-group-vertical" role="group" aria-label="...">
+  ...
+</div>
+```
+
+# Justified button group
+![](http://i.imgur.com/mduKqdP.jpg)
+```
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+  ...
+</div>
+```
+
+# Single button dropwdown
+![](http://i.imgur.com/XR3P4SC.jpg)
+```
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
+
+# Split button dropdown
+![](http://i.imgur.com/OaPWMgg.jpg)
+```
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
+
+# Input groups
+![](http://i.imgur.com/nlhkvhy.jpg)
+```
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+<label for="basic-url">Your vanity URL</label>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+```
+
+# Nav tabs
+![](http://i.imgur.com/8vH7xsH.jpg)
+```
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+```
+
+# Nav pills
+![](http://i.imgur.com/QqmlKzC.jpg)
+```
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+```
+
+# Nav justified
+![](http://i.imgur.com/jF3YZPw.jpg)
+```
+<ul class="nav nav-tabs nav-justified">
+  ...
+</ul>
+<ul class="nav nav-pills nav-justified">
+  ...
+</ul>
+```
+
+# Navbar default
+![](http://i.imgur.com/O8Dl4il.jpg)
+
+![](http://i.imgur.com/IUTgriT.jpg)
+```
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+```
+
+# Navbar brand image
+![](http://i.imgur.com/YVZJdGu.jpg)
+```
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+```
+
+# Navbar fixed to top
+![](http://i.imgur.com/KVz6QcY.jpg)
+![](http://i.imgur.com/DHJusht.jpg)
+```
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    ...
+  </div>
+</nav>
+```
+
+*Se requiere agregar ```padding``` al principio del ```<body>```. Por default la barra tiene 50px de alto.*
+```
+body { padding-top: 70px; }
+```
+
+# Navbar inverted
+![](http://i.imgur.com/LL4W5tC.jpg)
+```
+<nav class="navbar navbar-inverse">
+  ...
+</nav>
+```
+
+# Breadcrumbs
+![](http://i.imgur.com/szkjVNy.jpg)
+```
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+```
+
+# Pagination
+![](http://i.imgur.com/GC2biD3.jpg)
+```
+<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+```
+
+# Pagination disabled and active states
+![](http://i.imgur.com/tq0TfHx.jpg)
+```
+<nav>
+  <ul class="pagination">
+    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    ...
+  </ul>
+</nav>
+```
+
+# Badges
+![](http://i.imgur.com/mEx4Tx3.jpg)
+```
+<a href="#">Inbox <span class="badge">42</span></a>
+
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+```
+
+# Jumbotron
+![](http://i.imgur.com/3ykqJuy.jpg)
+```
+<div class="jumbotron">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+```
+
+# Page header
+![](http://i.imgur.com/T7unXQR.jpg)
+```
+<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+```
+
+# Thumbnails
+![](http://i.imgur.com/TQ4ykEj.jpg)
+```
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  ...
+</div>
+```
+
+# Thumbnails custom
+![](http://i.imgur.com/2FeW71q.jpg)
+```
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="..." alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+# Alerts
+![](http://i.imgur.com/nKEeAcQ.jpg)
+```
+<div class="alert alert-success" role="alert">...</div>
+<div class="alert alert-info" role="alert">...</div>
+<div class="alert alert-warning" role="alert">...</div>
+<div class="alert alert-danger" role="alert">...</div>
+```
+
+# Progress bars
+![](http://i.imgur.com/rkNMSid.jpg)
+```
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+```
+
+# Progress bars animated
+![](http://i.imgur.com/KUiZEz0.jpg)
+```
+<div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
+```
+
+# Responsive embed
+![(http://i.imgur.com/QFBQOaC.jpg)
+
+```
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
 ```
