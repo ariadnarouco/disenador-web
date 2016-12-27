@@ -43,5 +43,5 @@ Con el curso de Diseñador Web podrás realizar páginas web interactivas usando
 
                                                                                              
 
-                                                                                                                                                            ![](/assets/ch-isotype4.png)
+                                                                                                                         
 
