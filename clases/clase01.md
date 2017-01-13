@@ -1,3 +1,14 @@
+# Del Bosquejo al Código & HTML
+
+  * Cómo interpretar un diseño
+  * Diseño (Photoshop vs Mockups)
+  * Estructura HTML
+  * Etiquetas Básicas:
+    * Textos
+    * Encabezados
+    * Div y Span
+  * Etiquetas semánticas HTML5
+
 # Historia del HTML
 
 El origen de HTML se remonta a 1980, cuando el físico Tim Berners-Lee, trabajador del CERN (Organización Europea para la Investigación Nuclear) propuso un nuevo sistema de "hipertexto" para compartir documentos.
@@ -30,23 +41,25 @@ Así que, el DTD es dónde se define la estructura que debe tener el documento y
 ### El doctype en HTML5
 A partir de HTML5 la declaración del doctype es notablemente más sencilla, sólo basta con encabezar nuestro documento con la siguiente etiqueta.
 
-```<!DOCTYPE html>```
+```
+<!DOCTYPE html>
+```
 
 ## Estructura básica de un HTML
 
 Usaremos 3 tags para definir la estructura principal de un HTML, ellos son:
 
-```<html>```: Esta etiqueta delimita el contenido del documento e indica en que lenguaje está escrito.
+* ```<html>```: Esta etiqueta delimita el contenido del documento e indica en que lenguaje está escrito.
 
- ```<head>```: Es la parte privada del documento, se utiliza como un espacio de comunicación entre el sitio web y el navegador para configuración de la visualización del sitio.
+* ```<head>```: Es la parte privada del documento, se utiliza como un espacio de comunicación entre el sitio web y el navegador para configuración de la visualización del sitio.
 
-```<body>```: Encierra el contenido propiamente dicho del sitio.
+* ```<body>```: Encierra el contenido propiamente dicho del sitio.
 
 Una vez definida la estructura principal, veremos otras etiquetas básicas de HTML.
 
-```<title>```: La etiqueta title define el título de nuestra página, que será visualizado en la solapa del navegador.
+* ```<title>```: La etiqueta title define el título de nuestra página, que será visualizado en la solapa del navegador.
 
- ```<meta>```: Con esta etiqueta definiremos que codificación de caracteres utilizará nuestro sitio.
+* ```<meta>```: Con esta etiqueta definiremos que codificación de caracteres utilizará nuestro sitio.
 
 Utilizaremos todas estas etiquetas en nuestro primero ejemplo de estructura web:
 
@@ -62,6 +75,7 @@ Utilizaremos todas estas etiquetas en nuestro primero ejemplo de estructura web:
         </body>
     </html>
 ```
+[Ejercicio Profesor DOCTYPE](../ejercicios-profesores/ejercicios_1.md#1)
 
 ## Sintaxis HTML
 
@@ -79,9 +93,50 @@ Las  cerradas  encierran un contenido, por lo general texto. Las abiertas no enc
 En el ejemplo tenemos una etiqueta cerrada parrafo que engloba un texto y una etiqueta abierta para incluir una línea horizontal.
 El signo **/** se utiliza para las etiquetas de cierre; en las etiquetas cerradas se pone a continuación  del signo **<**, en las abiertas se pone delante del signo **>**.
 
+### Tags Encabezados
+
+* ```<html>```: Define un documento HTML
+
+* ```<body>```: Define el *body*  del documento
+
+* ```<head>```: Define el *head* del documento  
+
+* ```<h1> a <h6>```: Define encabezados, donde el ```<h1>```es el de mayor importancia y ```<h6>``` el de menor importancia
+
+* ```<hr>```: Define una línea horizontal
+
+* ```<p>```: Define un párrafo
+
+* ```<br>```: Inserta un salto de línea simple
+
+* ```<pre>```: Define un texto con formato pre definido, con texto justificado, tipografía Courier y respeta espacios y saltos de línea.
+
+### Tags Formato
+
+* ```<b>```: Define el texto en <b>Negrita</b>.
+
+* ```<em>```: Define un texto enfatizado para textos o palabras con <em>importancia semántica</em>.
+
+* ```<i>```: Define el texto en <i>Cursiva</i>.
+
+* ```<small>```: Define el texto más <small>pequeño</small>.
+
+* ```<strong>```: Define el texto con <strong>mayor importancia</strong>.
+
+* ```<sub>```: Define el texto <sub>subindice</sub>.
+
+* ```<sup>```: Define el texto con <sup>superindice</sup>.
+
+* ```<del>```: Defines el texto <del>tachado</del>.
+
+* ```<mark>```: Define el texto <mark>resaltado</mark>.
+
+[Ejercicio Profesor Formato](../ejercicios-profesores/ejercicios_1.md#2)
+
 # Etiquetas Semánticas
 HTML5 incorpora etiquetas semánticas que no sólo generan estructura, si no que también define su contenido.
 
+![alt tag](http://www.anerbarrena.com/wp-content/uploads/2015/05/etiquetas-semanticas-html5.jpg)
 
 ### Etiquetas
 * ```<section>```: Define una sección en un documento.
@@ -92,4 +147,4 @@ HTML5 incorpora etiquetas semánticas que no sólo generan estructura, si no que
 * ```<header>```: Define la cabecera de una página o sección.
 * ```<footer>```: Define el pie de una página o sección.
 
-
+[Ejercicio Profesor Etiquetas Semanticas](../ejercicios-profesores/ejercicios_1.md#3)

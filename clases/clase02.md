@@ -2,7 +2,7 @@
 
 ```<html>```: Define un documento HTML
 
-```<body>```: Define el *body*  del documento 
+```<body>```: Define el *body*  del documento
 
 ```<head>```: Define el *head* del documento  
 
@@ -13,14 +13,14 @@
 
 ## Tags Encabezados
 
-```<p>```: Define un párrafo 
+```<p>```: Define un párrafo
 
-```<br>```: Inserta un salto de línea simple 
+```<br>```: Inserta un salto de línea simple
 
-```<pre>```: Define un texto con formato pre definido, con texto justificado, tipografía Courier y respeta espacios y saltos de línea. 
- 
+```<pre>```: Define un texto con formato pre definido, con texto justificado, tipografía Courier y respeta espacios y saltos de línea.
+
 ## Tags Formato
- 
+
  ```<b>```: Define el texto en <b>Negrita</b>.
 
 ```<em>```: Define un texto enfatizado para textos o palabras con <em>importancia semántica</em>.
@@ -75,7 +75,7 @@ Dicho ejemplo se visualiza:
 
 ---
 
-### Listas de definición 
+### Listas de definición
 
 * ```<dl>```: Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.
 * ```<dt>```: Representa un término definido por el siguiente ```<dd>```
@@ -86,10 +86,10 @@ Dicho ejemplo se visualiza:
 <dl>
   <dt>SGML</dt>
   <dd>Metalenguaje para la definición de otros lenguajes de marcado</dd>
- 
+
   <dt>XML</dt>
   <dd>Lenguaje basado en SGML y que se emplea para describir datos</dd>
- 
+
   <dt>RSS</dt>
   <dt>GML</dt>
   <dt>XHTML</dt>
@@ -104,10 +104,10 @@ Se visualiza de la siguiente forma:
 <dl>
   <dt>SGML</dt>
   <dd>Metalenguaje para la definición de otros lenguajes de marcado</dd>
- 
+
   <dt>XML</dt>
   <dd>Lenguaje basado en SGML y que se emplea para describir datos</dd>
- 
+
   <dt>RSS</dt>
   <dt>GML</dt>
   <dt>XHTML</dt>
@@ -120,7 +120,7 @@ Se visualiza de la siguiente forma:
 
 Una tabla en un conjunto de celdas organizadas dentro de las cuales podemos alojar distintos contenidos. HTML dispone de una gran variedad de etiquetas y atributos para crear tablas.
 
-Sirven para representar información tabulada, en filas y columnas. 
+Sirven para representar información tabulada, en filas y columnas.
 
 
 ### Etiquetas básicas para tablas en HTML
@@ -140,7 +140,7 @@ Dentro de cada línea, habrá diferentes celdas. Cada una de estas celdas será 
 * ```<tfoot>```: Representa los bloques de filas que describen los  resúmenes de columna  de una tabla.
 * ```<tr>```:	Representa una fila de celdas en una tabla.
 * ```<td>```:	Representa una celda de datos en una tabla.
-* ```<th>```: Representa una celda encabezado en una tabla. 
+* ```<th>```: Representa una celda encabezado en una tabla.
 
 **A continuación veremos un ejemplo del código de una tabla:**
 ```
@@ -176,7 +176,7 @@ Dentro de cada línea, habrá diferentes celdas. Cada una de estas celdas será 
       </tbody>
     </table>
     ```
-    
+
   # Formularios
 
 ## El elemento ```<form>```
@@ -265,7 +265,7 @@ Este elemento tiene mútiples propósitos según el valor que tome el atributo *
 ```
 
     <label for="contrasena">Contraseña:</label> <input type="password" name="contrasena">
-    
+
 * **search:** El atributo type toma este valor cuando el formlario será para realizar búsquedas.
 * **tel:** Es utilizado para indicar que se ingresará un teléfono.
 
@@ -277,7 +277,7 @@ Este elemento tiene mútiples propósitos según el valor que tome el atributo *
 
     <input type="checkbox" value="1" id="acepta"> <label for="acepta">Acepta términos y condiciones</label>
 
-* **file:** Este atributo convierte al input para que el usuario pueda seleccionar un archivo de su computadora. 
+* **file:** Este atributo convierte al input para que el usuario pueda seleccionar un archivo de su computadora.
 ```
 <label for="foto">Foto:</label>
 <input type="file" name="foto">
@@ -285,7 +285,7 @@ Este elemento tiene mútiples propósitos según el valor que tome el atributo *
 
     <label for="foto">Foto:</label> <input type="file" name="foto">
 
-    
+
 * **number:** valida que la información ingresada por el usuario sera un número.
 
 * **radio:** Radio button define un elemento con múltiples opciones que puede tomar sólo un valor como respuesta.
@@ -342,7 +342,7 @@ El elemento **optgroup** funciona como título de un conjunto de opciones, pero 
 
 ***Atributos del elemento option:***
 * **label:** texto descriptivo de la opción.
-* **selected:** es un valor booleando que indica si el elemento se muestra seleccionado por defecto. 
+* **selected:** es un valor booleando que indica si el elemento se muestra seleccionado por defecto.
 
 ```<form>
         <select name="talles">
@@ -454,11 +454,11 @@ El atributo src puede ser una URL del archivo de audio o la ruta al archivo en e
 * autoplay: hace que el audio se reproduzca automáticamente.
 * loop: hace que el audio se repita automáticamente.
 * preload: es usado en el elemento audio para almacenar temporalmente (buffering) archivos de gran tamaño. Este puede tomar uno de 3 valores:
- 
+
     1. "none" no almacena temporalmente el archivo
     2. "auto" almacena temporalmente el archivo multimedia
     3. "metadata" almacena temporalmente sólo los metadatos del archivo
-    
+
 Se pueden especificar múltiples fuentes de archivos usando el elemento ```<source>``` con el fin de proporcionar vídeo o audio codificados en formatos diferentes para diferentes navegadores. Por ejemplo:
 
 ```
@@ -468,7 +468,7 @@ Se pueden especificar múltiples fuentes de archivos usando el elemento ```<sour
   Tu navegador no implementa el elemento <code>video</code>.
 </video>
 ```
-Esto reproduce el archivo Ogg en navegadores que admiten el formato Ogg. Si el navegador no admite Ogg, el navegador usará el archivo MPEG-4. 
+Esto reproduce el archivo Ogg en navegadores que admiten el formato Ogg. Si el navegador no admite Ogg, el navegador usará el archivo MPEG-4.
 
 También puedes especificar qué codecs requiere el archivo multimedia; de esta forma el navegador tomará decisiones más inteligentes:
 
