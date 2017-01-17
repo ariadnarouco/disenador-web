@@ -1,6 +1,8 @@
+## Ejercicios Clase 1
+
 * Vamos a crear un documento html
 
-``html
+```html
 <!DOCTYPE html>
     <html>
         <head>
@@ -15,8 +17,7 @@
 
 * Vamos a utilizar etiquetas que modifiquen el texto
 
-```
-html
+```html
 	<p>
 		<strong> negrita </strong>
 		<em> Cursiva </em>
@@ -30,7 +31,7 @@ html
 
 * El uso de las etiquetas semanticas es de gran ayuda en HTML5
 
-```
+```html
 <body>
 
   <header>
