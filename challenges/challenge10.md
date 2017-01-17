@@ -7,6 +7,7 @@
     * 1 Sección con 4 columnas (responsiva y transformarse a 2 columnas y luego a 1)
     * 1 Sección con 1 columna
 
+## Resolución
     ```html
     <!DOCTYPE html>
       <html>
