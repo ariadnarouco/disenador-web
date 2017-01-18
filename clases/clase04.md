@@ -1,6 +1,6 @@
 # Modelo de cajas
 
-El modelo de caja o (box-model) es el que condiciona el diseño de las páginas web. 
+El modelo de caja o (box-model) es el que condiciona el diseño de las páginas web.
 
 En HTML, todos los elementos generan una caja que los contiene, sobre la cual, actúan los estilos.
 
@@ -22,7 +22,7 @@ De adentro hacia fuera, las cajas tienen contenido, padding, borde y margen.
 
 ## Alto y ancho
 
-Por default, si no le indicamos ningún ancho específico, el navegador va a hacer que la caja ocupe todo el ancho de la ventana. Con respecto al alto, va a hacer que la caja ocupe el mínimo posible, por lo que el alto de la misma, va a depender pura y exclusivamente del contenido que tenga. 
+Por default, si no le indicamos ningún ancho específico, el navegador va a hacer que la caja ocupe todo el ancho de la ventana. Con respecto al alto, va a hacer que la caja ocupe el mínimo posible, por lo que el alto de la misma, va a depender pura y exclusivamente del contenido que tenga.
 
 **Ancho**
 
@@ -32,7 +32,9 @@ La propiedad ```width``` no admite valores negativos y los valores en porcentaje
 
 El siguiente ejemplo establece como valor de ancho 200px para el elemento ```<div>``` caja:
 
-```#caja { width: 200px; }```
+```
+#caja { width: 200px; }
+```
 
 ```
 <div id="caja">
@@ -44,11 +46,13 @@ Otras dos propiedades relacionadas con la anchura de los elementos: ```min-width
 
 La propiedad ```max-width``` define el ancho de una caja, sin darle un valor fijo. De esta manera le podemos dar un tamaño de ancho máximo, lo que significa que si la ventana del navegador se achica o se agranda, la caja también lo hace, pero con un ancho máximo de tope. O sea, no se va a agrandar más que el valor que le hayamos configurado en la propiedad ```max-width```.
 
-```#caja { 
+```
+#caja {
 width: 200px;
 max-width: 800px;
-}```
- 
+}
+```
+
 ```
 <div id="caja">
   ...
@@ -57,12 +61,14 @@ max-width: 800px;
 
 De la misma manera que definimos un ancho máximo, podemos definir un ancho mínimo. Lo que significa que la caja no va a medir menos de lo que nosotros le hayamos configurado. Esta propiedad se llama ```min-width```.
 
-```#caja { 
+```
+#caja {
 width: 200px;
 max-width: 800px;
 min-width: 400px;
-}```
- 
+}
+```
+
 ```
 <div id="caja">
   ...
@@ -77,8 +83,10 @@ Al igual que sucede con ```width```, la propiedad ```height``` no admite valores
 
 El siguiente ejemplo establece como valor de alto 50px para el elemento ```<div>``` cabecera:
 
-```#cabecera { height: 50px; }```
- 
+```
+#cabecera { height: 50px; }
+```
+
 ```
 <div id="cabecera">
   ...
@@ -105,19 +113,21 @@ Puedes definir los 4 lados o solo aquellos que necesites.
 
 En base a nuestro ejemplo anterior, vamos a definirle márgenes a nuestro div caja.
 
-```#caja { 
-width: 200px;
-max-width: 800px;
-min-width: 400px;
-margin-top: 5px;
-margin-bottom: 5px;
-margin-left: 10px;
-margin-right: 10px;
-}```
+```
+#caja {
+  width: 200px;
+  max-width: 800px;
+  min-width: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+```
 
 Además de las cuatro propiedades que controlan cada uno de los márgenes del elemento, CSS define una propiedad especial que permite establecer los cuatro márgenes de forma simultánea.
 
-Esta propiedad se llama ```margin```. Entonces: 
+Esta propiedad se llama ```margin```. Entonces:
 
 1) Si sólo se indica un valor, todos los márgenes tienen ese mismo valor.
 
@@ -149,17 +159,27 @@ Al igual que con los márgenes, CSS también define una propiedad llamada ```pad
 
 Entonces, podemos escribir cada relleno por separado, definiendo su ubicación:
 
-```padding-top: 5px;```
+```
+padding-top: 5px;
+```
 
-```padding-bottom: 5px;```
+```
+padding-bottom: 5px;
+```
 
-```padding-left: 10px;```
+```
+padding-left: 10px;
+```
 
-```padding-right: 10px;```
+```
+padding-right: 10px;
+```
 
 O podemos escribir los cuatro juntos con la propiedad ```padding``` por sí sola:
 
-```padding: 5px 10px 12px 15px;```
+```
+padding: 5px 10px 12px 15px;
+```
 
 # Posicionamiento y visualización
 Cuando los navegadores descargan el contenido HTML y CSS de las páginas web crean una caja para representar a cada elemento.
@@ -187,21 +207,27 @@ Por otra parte, los elementos en línea no empiezan necesariamente en nueva lín
 
 #### Los elementos en línea definidos por HTML son:
 
-```a```, ```abbr```, ```acronym```, ```b```, ```basefont```, ```bdo```, ```big```, ```br```, ```cite```, ```code```, ```dfn```, ```em```, ```font```, ```i```, ```img```, ```input```, ```kbd```, ```label```, ```q```, ```s```,``` samp```, ```select```, ```small```, ```span```, ```strike```, ```strong```, ```sub```, ```sup```, ```textarea```, ```tt```, ```u```, ```var```.
+```
+a abbr acronym b basefont bdo big br cite code dfn em font i img input kbd label q s samp select small span strike strong sub sup textarea tt u var
+```
 
 #### Los elementos de bloque definidos por HTML son:
 
-```address```, ```blockquote```, ```center```, ```dir```, ```div```, ```dl```, ```fieldset```, ```form```, ```h1```, ```h2```,``` h3```, ```h4```, ```h5```, ```h6```, ```hr```, ```isindex```, ```menu```, ```noframes```, ```noscript```, ```ol```, ```p```, ```pre```, ```table```, ```ul```.
+```
+address blockquote center dir div dl fieldset form h1 h2 h3 h4 h5 h6 hr isindex menu noframes noscript ol p pre table ul
+```
 
 #### Los siguientes elementos también se considera que son de bloque:
 
-```dd```, ```dt```, ```frameset```, ```li```, ```tbody```, ```td```, ```tfoot```, ```th```, ```thead```, ```tr```.
+```
+dd dt frameset li tbody td tfoot th thead tr
+```
 
 #### Los siguientes elementos pueden ser en línea y de bloque según las circunstancias:
 
-```button```, ```del```, ```iframe```, ```ins```, ```map```, ```object```, ```script```.
-
-<br>
+```
+button del iframe ins map object script
+```
 
 ## Posicionamiento
 Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML. No obstante, CSS permite modificar la posición en la que se muestra cada caja.
@@ -350,7 +376,9 @@ El valor ```right``` tiene un funcionamiento idéntico, salvo que en este caso, 
 
 La propiedad ```clear``` permite modificar el comportamiento por defecto del posicionamiento flotante para forzar a un elemento a mostrarse debajo de cualquier caja flotante. La regla CSS que se aplica al segundo párrafo del ejemplo anterior es la siguiente:
 
-```<p style="clear: left;">...</p>```
+```
+<p style="clear: left;">...</p>
+```
 
 La propiedad ```clear``` indica el lado del elemento HTML que no debe ser adyacente a ninguna caja posicionada de forma flotante. Si se indica el valor ```left```, el elemento se desplaza de forma descendente hasta que pueda colocarse en una línea en la que no haya ninguna caja flotante en el lado izquierdo.
 
@@ -426,3 +454,46 @@ La posición tridimensional de un elemento se establece sobre un tercer eje llam
 El valor más común de la propiedad ```z-index``` es un número entero. Aunque la especificación oficial permite los números negativos, en general se considera el número 0 como el nivel más bajo.
 
 Cuanto más alto sea el valor numérico, más cerca del usuario se muestra la caja. Un elemento con ```z-index```: 10 se muestra por encima de los elementos con ```z-index: 8``` o ```z-index: 9```, pero por debajo de elementos con ```z-index: 20``` o ```z-index: 50```.
+
+# ¿Qué es flexbox?
+
+Flexbox es un modo de diseño que nos permite crear estructuras para sitios web de una forma más fácil. Si ya sabes de HTML y CSS probablemente alguna vez habrás visto que los sitios web se realizan utilizando la propiedad float, para desplazar contenedores. Con Flexbox ya no necesitaras usar float para posicionar tus elementos, al contrario, con Flexbox podrás posicionar y distribuir los elementos como tú quieras.
+
+Puedes posicionar un elemento en la posición que desees horizontalmente y por si fuera poco también en forma vertical. Posicionar elementos de forma vertical no es tarea fácil sin Flexbox, incluso muchas veces teníamos que hacer uso de Javascript para hacer cálculos y saber cuánto margen poner a un elemento para centrarlo verticalmente.
+
+No solo puedes posicionar elementos vertical y horizontalmente, sino que puede establecer como se distribuirán, el orden que tendrán e incluso el tamaño que tendrán en proporción a otros elementos. Esto es perfecto para crear diseños adaptables a dispositivos móviles (Responsive Design).
+
+Flexbox no es una propiedad ni un conjunto de propiedades. Flexbox es un nuevo modelo de layout que viene a incorporarse a los ya existentes en css (se está trabajando actualmente en nuevo modelo: el grid layout):
+
+* Block (los elementos aparecen uno debajo de otro ocupando todo el ancho disponible)
+
+* Inline (los elementos aparecen uno al lado del otro en una linea y saltan a la linea siguiente al ocupar el espacio disponible)
+
+* Table (los elementos imitan la distribución de una tabla HTML, con filas, encabezados y columnas).
+
+* Positioned (los elementos pueden romper el flujo y posicionarse en cualquier lugar del documento).
+
+Un modelo de layout es un set de algoritmos que determinan el tamaño y la posición de los elementos con respecto a sus hermanos y ancestros.
+
+# ¿Qué se puede hacer con flexbox?
+
+Entendiendo lo que significa un modelo de layout, con flexbox podemos hacer lo siguiente:
+
+* Distribuir los elementos en sentido vertical u horizontal.
+
+* Reordenar la aparición de los elementos sobreescribiendo su aparición en el navegador.
+
+* Ajustar dinámicamente las dimensiones de los elementos para evitar desbordamientos (overflow) respecto a su padre.
+
+* Redefinir el sentido del flujo de los elementos (hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha).
+
+* Alinear los elementos respecto al padre o respecto a sus hermanos.
+
+# Conceptos básicos de Flexbox
+
+Para entender bien este modelo de Layout debemos de entender algunos conceptos básicos. Primero la disposición flex debe de estar constituido por elementos padres e hijos, el padre será el contenedor Flexible “flex container” y los hijos inmediato serán los elementos Flexibles “flex item”.
+
+
+![](http://i.imgur.com/djzs3zF.jpg)
+
+En la imagen anterior vemos como la W3C nos presenta gráficamente el modelo flexbox con sus diferentes propiedades y su pensado funcionamiento.
