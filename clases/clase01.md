@@ -63,7 +63,7 @@ Una vez definida la estructura principal, veremos otras etiquetas básicas de HT
 
 Utilizaremos todas estas etiquetas en nuestro primero ejemplo de estructura web:
 
-```
+```html
 <!DOCTYPE html>
     <html>
         <head>
@@ -75,7 +75,7 @@ Utilizaremos todas estas etiquetas en nuestro primero ejemplo de estructura web:
         </body>
     </html>
 ```
-[Ejercicio Profesor DOCTYPE](../ejercicios-profesores/ejercicios_1.md#1)
+[Ejercicio Profesor DOCTYPE](../ejercicios-profesores/ejercicios 1.md#1)
 
 ## Sintaxis HTML
 

@@ -1,5 +1,6 @@
-## Ejercicios Clase 1
+# Ejercicios Clase 1
 
+### 1
 * Vamos a crear un documento html
 
 ```html
@@ -15,6 +16,7 @@
     </html>
 ```
 
+### 2
 * Vamos a utilizar etiquetas que modifiquen el texto
 
 ```html
@@ -29,6 +31,7 @@
 	</p>
 ```
 
+### 3
 * El uso de las etiquetas semanticas es de gran ayuda en HTML5
 
 ```html

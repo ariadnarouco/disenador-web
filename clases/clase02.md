@@ -1,44 +1,3 @@
-# Tags Encabezados
-
-```<html>```: Define un documento HTML
-
-```<body>```: Define el *body*  del documento
-
-```<head>```: Define el *head* del documento  
-
-```<h1> a <h6>```: Define encabezados, donde el ```<h1>```es el de mayor importancia y ```<h6>``` el de menor importancia 
-
-```<hr>```: Define una línea horizontal
-
-
-## Tags Encabezados
-
-```<p>```: Define un párrafo
-
-```<br>```: Inserta un salto de línea simple
-
-```<pre>```: Define un texto con formato pre definido, con texto justificado, tipografía Courier y respeta espacios y saltos de línea.
-
-## Tags Formato
-
- ```<b>```: Define el texto en <b>Negrita</b>.
-
-```<em>```: Define un texto enfatizado para textos o palabras con <em>importancia semántica</em>.
-
-```<i>```: Define el texto en <i>Cursiva</i>.
-
-```<small>```: Define el texto más <small>pequeño</small>.
-
-```<strong>```: Define el texto con <strong>mayor importancia</strong>.
-
-```<sub>```: Define el texto <sub>subindice</sub>.
-
-```<sup>```: Define el texto con <sup>superindice</sup>.
-
-```<del>```: Defines el texto <del>tachado</del>.
-
-```<mark>```: Define el texto <mark>resaltado</mark>.
-
 # Listas
 
 HTML permite agrupar elementos que tienen más significado de forma conjunta. El menú de navegación de un sitio web por ejemplo está formado por un grupo de palabras. Aunque cada palabra por separado tiene sentido, de forma conjunta constituyen el menú de navegación de la página, por lo que su significado conjunto es mayor que por separado. Esto es denominado como listas
@@ -48,7 +7,7 @@ HTML permite agrupar elementos que tienen más significado de forma conjunta. El
 2. Listas ordenadas
 3. Listas de definición
 
-### Listas
+### Listas Ordenadas y No Ordenadas
 * ```<ol>```: Define una lista ordenada de artículos.
 * ```<ul>```: Define una lista de artículos sin orden.
 * ```<li>```: Define un artículo de una lista.
@@ -82,7 +41,7 @@ Dicho ejemplo se visualiza:
 * ```<dd>```: Representa la definición de los terminos listados antes que él.
 
 
-```
+```html
 <dl>
   <dt>SGML</dt>
   <dd>Metalenguaje para la definición de otros lenguajes de marcado</dd>
@@ -176,8 +135,9 @@ Dentro de cada línea, habrá diferentes celdas. Cada una de estas celdas será 
       </tbody>
     </table>
     ```
+[Ejercicio Profesor Listas](../ejercicios-profesores/ejercicios_2.md#1)
 
-  # Formularios
+# Formularios
 
 ## El elemento ```<form>```
 
@@ -344,7 +304,8 @@ El elemento **optgroup** funciona como título de un conjunto de opciones, pero 
 * **label:** texto descriptivo de la opción.
 * **selected:** es un valor booleando que indica si el elemento se muestra seleccionado por defecto.
 
-```<form>
+```html
+<form>
         <select name="talles">
             <optgroup label="Adultos">
                 <option value="L">Large</option>
@@ -359,7 +320,8 @@ El elemento **optgroup** funciona como título de un conjunto de opciones, pero 
         </select>
     </form>
 ```
-```
+
+```html
 <form>
     <select name="talles">
         <optgroup label="Adultos">
@@ -375,6 +337,8 @@ El elemento **optgroup** funciona como título de un conjunto de opciones, pero 
     </select>
 </form>
 ```
+[Ejercicio Profesor Formulario](../ejercicios-profesores/ejercicios_2.md#2)
+
 # Enlaces
 
 Los enlaces (también conocidos como links o ancors) se utilizan para relacionar partes del documento con otros documentos o con partes del mismo documento. Por defecto, los enlaces se visualizan azules y subrayados.
@@ -383,7 +347,9 @@ Para crear un enlace es necesario utilizar la etiqueta de ancla ```<a>``` con el
 
 Sintaxis de un enlace:
 
-```<a href="productos.html">Productos</a>```
+```
+<a href="productos.html">Productos</a>
+```
 
 El texto "productos", que figura entre las etiquetas ```<a>```, es el que se visualizará en el navegador y que servirá como enlace a la url especificada en el atributo **href**.
 
@@ -394,17 +360,23 @@ Los enlaces relativos son aquellos que apuntan a páginas ubicadas dentro del mi
 
 Si la página referenciada se encuentra en el mismo directorio alcanza con mencionar el nombre de la misma para generar el enlace.
 
-```<a href="contacto.html">Contacto</a>```
+```
+<a href="contacto.html">Contacto</a>
+```
 
 En caso de que el archivo se encuentre en un directorio específico, el mismo deberá ser mencionado.
 
-```<a href="imagenes/mapa.jpg">ver mapa</a>```
+```
+<a href="imagenes/mapa.jpg">ver mapa</a>
+```
 
 En el ejemplo anterior, el destino al cual queremos acceder (en este caso una imagen) se encuentra dentro de la carpeta "imagenes" con lo cual hay que especificar esa ruta en el atributo "href".
 
 Los enlaces absolutos son aquellos cuyo destino apunta a un documento que fuera del sitio y debe ser especificado utilizando la URL completa:
 
-```<a href="http://www.coderhouse.com/frontend">Curso de Frontend</a>```
+```
+<a href="http://www.coderhouse.com/frontend">Curso de Frontend</a>
+```
 
 Los enlaces internos permiten referenciar secciones de nuestra página, para hacer esto se utiliza el id:
 ```
@@ -415,7 +387,9 @@ Los enlaces internos permiten referenciar secciones de nuestra página, para hac
 
 También podemos usar como destino una sección específica una página distinta.
 
-```<a href=“contacto.html#formulario”>Formulario de contacto</footer>```
+```
+<a href=“contacto.html#formulario”>Formulario de contacto</a>
+```
 
 En el ejemplo anterior el enlace apunta a la sección que tiene el id formulario, dentro de la página “contacto.html”.
 
@@ -478,3 +452,5 @@ También puedes especificar qué codecs requiere el archivo multimedia; de esta 
   Tu navegador no implementa el elemento <code>video</code>.
 </video>
 ```
+
+[Ejercicio Profesor Audio y Video](../ejercicios-profesores/ejercicios_2.md#3)

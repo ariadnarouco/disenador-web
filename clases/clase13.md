@@ -48,7 +48,7 @@ La utilización de lenguaje claro y simple facilita la comunicación de informac
 
 **Imágenes y animaciones**
 
-Utilizar el atributo alt para describir la función de cada elemento visual. 
+Utilizar el atributo alt para describir la función de cada elemento visual.
 
 **Mapas de imagen**
 
@@ -76,7 +76,7 @@ Ofrecer contenido alternativo si las funciones no son accesibles.
 
 **Marcos**
 
-Utilizar el elemento noframes y títulos con sentido. 
+Utilizar el elemento noframes y títulos con sentido.
 
 **Revisá tu trabajo**
 
@@ -92,7 +92,9 @@ Hay que emplear la mayor creatividad posible para crear un sitio de fácil usabi
 
 **Imágen**
 
-```<img src="img/camp-2011-logo.gif" alt="Camp 2011">```
+```html
+<img src="img/camp-2011-logo.gif" alt="Camp 2011">
+```
 
 **Campos de texto**
 
@@ -130,7 +132,7 @@ principales actividades u ofertas.
 #### Usa títulos descriptivos breves
 
  Los títulos pueden ser concisos pero informativos. Si el título es demasiado largo, Google mostrará tan solo una parte del mismo en el resultado de búsqueda.
- 
+
  ## Utiliza la metaetiqueta description
 
 
@@ -160,7 +162,7 @@ Las metaetiquetas description son importantes ya que Google podría utilizarlas 
 
 Agregar metaetiquetas description para cada una de tus páginas es siempre una buena práctica en caso de que Google no pueda encontrar un buen texto a utilizar como fragmento. Encontrarás una entrada sobre cómo mejorar los fragmentos con metaetiquetas description en el Blog para webmasters de Google.
 
-Las palabras que aparecen en el fragmento están en negrita si coinciden con la consulta del usuario. Esto da pistas al usuario para saber si el contenido de la página coincide con lo que busca. 
+Las palabras que aparecen en el fragmento están en negrita si coinciden con la consulta del usuario. Esto da pistas al usuario para saber si el contenido de la página coincide con lo que busca.
 
 A continuación hay otro ejemplo, esta vez mostrando un fragmento de una metaetiqueta description de una página interna (que idealmente tiene una metaetiqueta description única) que contiene un artículo.
 
@@ -173,7 +175,7 @@ A continuación hay otro ejemplo, esta vez mostrando un fragmento de una metaeti
 
 * una metaetiqueta description con contenido no relacionado con la página descripciones genéricas como “Esto es una página web” o “Página sobre cromos de béisbol”
 
-* una descripción con sólo palabras clave 
+* una descripción con sólo palabras clave
 copiar y pegar todo el contenido del documento en una metaetiqueta description.
 
 
@@ -181,7 +183,7 @@ copiar y pegar todo el contenido del documento en una metaetiqueta description.
 
 Tener una metaetiqueta diferente para cada página ayuda tanto a los usuarios como a Google, especialmente en búsquedas en las que los usuarios pueden obtener varias páginas de tu dominio (por ejemplo, búsquedas con el operador site:). Si tu sitio tiene miles o incluso millones de páginas, la elaboración de metaetiquetas description a mano no será factible. En este caso, se pueden generar automáticamente basándose en el contenido de cada página.
 
-**Evita:** 
+**Evita:**
 * Utilizar una única metaetiqueta description en todas las páginas de tu sitio o en un gran grupo de páginas de tu sitio.
 
 # Mejorando la estructura de las url
@@ -238,7 +240,7 @@ Los enlaces de navegación son una línea de enlaces internos ubicados en la par
 
 #### Deja abierta la posibilidad de que una parte de la URL pueda ser eliminada
 
-Piensa lo que puede ocurrir cuando un usuario quita parte de una de tus URL - Algunos usuarios podrían navegar por tu sitio web de formas muy raras y deberías anticiparte a esto. 
+Piensa lo que puede ocurrir cuando un usuario quita parte de una de tus URL - Algunos usuarios podrían navegar por tu sitio web de formas muy raras y deberías anticiparte a esto.
 
 Por ejemplo, en lugar de usar los enlaces de navegación de la página, un usuario podría quitar parte de una URL para encontrar contenido más general. El o ella podría estar visitando http://www. brandonsbaseballcards.com/noticias/2010/eventos-béisbolcromos.htm, pero escribe http://www.brandonsbaseballcards.com/ noticias/2010/ en la barra de navegación, creyendo que esto le mostrará todas las noticias de 2010.
 
@@ -248,7 +250,7 @@ Por ejemplo, en lugar de usar los enlaces de navegación de la página, un usuar
 
 Un mapa del sitio es una página normal y corriente de nuestro sitio web en el que se muestra su estructura, y que normalmente consiste en una lista jerárquica de las páginas que lo conforman. Puede que los usuarios visiten esta página si no pueden encontrar alguna página determinada de nuestro sitio web, aunque puede que los motores de búsqueda también visiten esta página para una mejor indexación de las páginas del mismo.
 
-Esta página se crea principalmente para los usuarios. Un archivo Sitemap XML, el cual puede enviarse a través de las Herramientas para webmasters de Google, facilita que Google encuentre las páginas de tu sitio web. 
+Esta página se crea principalmente para los usuarios. Un archivo Sitemap XML, el cual puede enviarse a través de las Herramientas para webmasters de Google, facilita que Google encuentre las páginas de tu sitio web.
 
 
 Usar un archivo sitemap es además una forma de decirle a Google, aunque no de garantizar, qué versión de una URL prefieres como la principal (p. ej. http:// brandonsbaseballcards.com/ o http://www.brandonsbaseballcards. com/; más información en ¿Qué es un dominio preferido?).
@@ -268,8 +270,8 @@ Algunas veces los usuarios acceden, o bien porque siguen un enlace roto o bien p
 
 **Evita**
 
-* Que tus páginas 404 sean indexadas por los motores de búsqueda (asegúrate de que tu servidor web esté configurado para dar un código 404 HTTP cuando se pidan páginas que no existen) 
-* Ofrecer solo mensajes vagos como “No encontrado”, “404” o ni siquiera un 404 
+* Que tus páginas 404 sean indexadas por los motores de búsqueda (asegúrate de que tu servidor web esté configurado para dar un código 404 HTTP cuando se pidan páginas que no existen)
+* Ofrecer solo mensajes vagos como “No encontrado”, “404” o ni siquiera un 404
 * Usar un diseño para tus páginas 404 que no sea coherente con el diseño de tu sitio web
 
 # Ofrece contenido y servicios de calidad
@@ -284,13 +286,13 @@ Esto puede ser a través de una entrada en un blog, redes sociales, correo elect
 #### Anticípate a la diferencia de conocimiento de tus usuarios sobre el tema que tratas y ofrece contenido único y exclusivo
 
 
-Piensa en las palabras que un usuario podría utilizar en la búsqueda para encontrar tu contenido. Usuarios que saben mucho sobre el tema podrían utilizar diferentes palabras que otros a los que el tema les es nuevo. Por ejemplo, un seguidor del béisbol de toda la vida podría buscar por [nlcs], acrónimo de National League Champion Series. Mientras un nuevo fan utilizaría una búsqueda más general como [béisbol playoffs]. 
+Piensa en las palabras que un usuario podría utilizar en la búsqueda para encontrar tu contenido. Usuarios que saben mucho sobre el tema podrían utilizar diferentes palabras que otros a los que el tema les es nuevo. Por ejemplo, un seguidor del béisbol de toda la vida podría buscar por [nlcs], acrónimo de National League Champion Series. Mientras un nuevo fan utilizaría una búsqueda más general como [béisbol playoffs].
 
-Anticiparse a estas diferencias en cómo los usuarios hacen las búsquedas y tenerlas en cuenta a la hora de escribir tu contenido (utilizando una buena mezcla de palabras claves) puede dar buenos resultados. Google Adwords ofrece una práctica herramienta, Herramienta para palabras claves, que te ayudará a descubrir nuevas variaciones de palabras claves y ver el volumen aproximado de búsquedas de cada una. 
+Anticiparse a estas diferencias en cómo los usuarios hacen las búsquedas y tenerlas en cuenta a la hora de escribir tu contenido (utilizando una buena mezcla de palabras claves) puede dar buenos resultados. Google Adwords ofrece una práctica herramienta, Herramienta para palabras claves, que te ayudará a descubrir nuevas variaciones de palabras claves y ver el volumen aproximado de búsquedas de cada una.
 
 Además, las Herramientas para webmasters de Google te ofrecen un ranking de búsquedas por las que tu sitio web aparece y las que generan más usuarios para tu sitio web.
 
-Así que piensa bien en crear un servicio nuevo y útil que otros sitios no ofrezcan. Puedes además pensar en escribir un documento de investigación sobre el que no se haya tratado antes, ser el primero en publicar un noticia, o aprovechar la cantidad de usuarios únicos que posees. 
+Así que piensa bien en crear un servicio nuevo y útil que otros sitios no ofrezcan. Puedes además pensar en escribir un documento de investigación sobre el que no se haya tratado antes, ser el primero en publicar un noticia, o aprovechar la cantidad de usuarios únicos que posees.
 
 Otros sitios web podrían tener falta de recursos o experiencia en hacer algunas de estas cosas.
 
@@ -302,7 +304,7 @@ Los usuarios disfrutan de un contenido que está bien escrito y sea fácil de en
 
 **Evita**
 
-* escribir textos descuidados con muchos errores ortográficos y gramaticales. 
+* escribir textos descuidados con muchos errores ortográficos y gramaticales.
 * incorporar texto en formato imagen cuando quieras que ese texto forme parte del contenido, ya que los usuarios podrían querer copiar y pegar el texto, y además los motores de búsqueda no pueden leerlo.
 
 #### Céntrate en el tema
@@ -317,7 +319,7 @@ Siempre es beneficioso organizar el contenido de tal manera que el usuario tenga
 El contenido nuevo no sólo hará que los usuarios que ya tienes vuelvan a tu sitio web, sino que además atraerá nuevas visitas.
 
 **Evita**
-* rehacer (o copiar) contenido que ya existe, pues aportará muy poco valor añadido a los usuarios. 
+* rehacer (o copiar) contenido que ya existe, pues aportará muy poco valor añadido a los usuarios.
 * tener versiones duplicadas o muy parecidas en tu sitio web - más en contenido duplicado.
 
 #### Crea contenido principalmente para los usuarios, no para los motores de búsqueda
@@ -326,8 +328,8 @@ Diseña tu sitio web según las necesidades de los usuarios y si además te aseg
 
 **Evita**
 
-* Insertar una gran cantidad de palabras clave dirigidas a los motores de búsqueda, pero que no tienen sentido y son molestas para los usuarios 
-* Tener bloques de texto tipo “errores ortográficos frecuentes usados para llegar a esta página” y que ofrecen poco valor a los usuarios 
+* Insertar una gran cantidad de palabras clave dirigidas a los motores de búsqueda, pero que no tienen sentido y son molestas para los usuarios
+* Tener bloques de texto tipo “errores ortográficos frecuentes usados para llegar a esta página” y que ofrecen poco valor a los usuarios
 * texto escondido para los usuarios, pero visible para los motores de búsqueda.
 
 # Escribe textos ancla de mejor calidad
@@ -337,7 +339,7 @@ Diseña tu sitio web según las necesidades de los usuarios y si además te aseg
 
 El texto ancla es aquel texto en el que podemos hacer clic y que los usuarios ven como un enlace. Este está ubicado en la etiqueta ancla.
 
-Este texto indica a los usuarios y a Google algo sobre la página a la que se enlaza. Los enlaces de tu página web puede que sean internos, es decir, que enlacen a otras páginas de tu sitio web, o salientes, que te llevan a contenido en otras páginas web. 
+Este texto indica a los usuarios y a Google algo sobre la página a la que se enlaza. Los enlaces de tu página web puede que sean internos, es decir, que enlacen a otras páginas de tu sitio web, o salientes, que te llevan a contenido en otras páginas web.
 
 En ambos casos, cuanto mejor sea tu texto ancla, más fácil será para los usuarios moverse por tu página y más fácil será para Google entender de qué va la página a la que estás enlazando.
 
@@ -346,8 +348,8 @@ En ambos casos, cuanto mejor sea tu texto ancla, más fácil será para los usua
 El texto ancla que utilices para enlazar debe ofrecer al menos una idea general sobre lo que trata la página a la que está enlazando.
 
 **Evita:**
-* escribir texto ancla genérico como “página”, “artículo” o “haz clic aquí” 
-* usar texto fuera de contexto o que no esté relacionado con la página a la que se enlaza 
+* escribir texto ancla genérico como “página”, “artículo” o “haz clic aquí”
+* usar texto fuera de contexto o que no esté relacionado con la página a la que se enlaza
 * usar la URL de la página como texto ancla por regla general (aunque hay algunos usos legítimos, como cuando, por ejemplo, se quiere promocionar o hacer referencia a un nuevo sitio web)
 
 #### Escribe textos concisos
@@ -362,8 +364,8 @@ Intenta redactar textos cortos y descriptivos, generalmente con varias palabras 
 
 Facilita a los usuarios la distinción del texto normal y el texto ancla de los enlaces. Tu contenido será menos útil si los usuarios no encuentran los enlaces o hacen clic por error.
 
-**Evita** 
-* usar CSS o un formato de texto que haga que los enlaces 
+**Evita**
+* usar CSS o un formato de texto que haga que los enlaces
 parezcan texto normal.
 
 #### Utiliza el texto ancla también para los enlaces internos
@@ -372,16 +374,16 @@ Generalmente pensamos en los enlaces en términos de enlaces a páginas externas
 
 **Evita**
 
-* utilizar palabras clave de relleno de forma excesiva o muy largas sólo pensando en los motores de búsqueda. 
+* utilizar palabras clave de relleno de forma excesiva o muy largas sólo pensando en los motores de búsqueda.
 * crear enlaces innecesarios que no sirvan para que los usuarios naveguen por el sitio web
 
 # Optimiza el uso de las imágenes
 
 #### Utiliza el atributo “alt” para ofrecer información sobre las imágenes.
 
-Las imágenes pueden parecer un componente muy sencillo de tu sitio web, pero puedes optimizar su uso. Todas las imágenes pueden tener un nombre de archivo definido y un atributo “alt”, de los cuales podemos aprovecharnos. El atributo “alt” te permite especificar texto que puede aparecer en vez de la imagen, si ésta no puede mostrarse por la razón que sea. 
+Las imágenes pueden parecer un componente muy sencillo de tu sitio web, pero puedes optimizar su uso. Todas las imágenes pueden tener un nombre de archivo definido y un atributo “alt”, de los cuales podemos aprovecharnos. El atributo “alt” te permite especificar texto que puede aparecer en vez de la imagen, si ésta no puede mostrarse por la razón que sea.
 
-¿Por qué utilizar este atributo? Si un usuario esta viendo tu página web con un navegador que no es compatible con las imágenes, o está utilizando tecnologías alternativas, como un lector de pantalla, el contenido del atributo “alt” ofrecerá información sobre la imagen. 
+¿Por qué utilizar este atributo? Si un usuario esta viendo tu página web con un navegador que no es compatible con las imágenes, o está utilizando tecnologías alternativas, como un lector de pantalla, el contenido del atributo “alt” ofrecerá información sobre la imagen.
 
 Otra razón es que si usamos una imagen como enlace, el texto en “alt” será tratado de forma similar a un texto ancla de un texto de enlace. Sin embargo, no recomendamos usar demasiadas imágenes como enlaces en tu barra de navegación, cuando los enlaces de texto pueden funcionar.
 
@@ -403,8 +405,8 @@ Esto simplifica la ruta de tus imágenes. Usa archivos que estén ampliamente ac
 Como en cualquier otra parte de la página que puede ser optimizada, los nombres de archivo y el texto en “alt” (para lenguajes ASCII) funcionan mejor cuando son cortos y descriptivos.
 
 **Evita:**
-* usar nombres genéricos como “imagen1.jpg”, “pic.gif” o “1.jpg” cuando sea posible (algunos sitios web con miles de imágenes pueden decidir darles los nombres a las imágenes de forma automática) 
-* escribir nombres de archivos muy largos 
+* usar nombres genéricos como “imagen1.jpg”, “pic.gif” o “1.jpg” cuando sea posible (algunos sitios web con miles de imágenes pueden decidir darles los nombres a las imágenes de forma automática)
+* escribir nombres de archivos muy largos
 * llenar el atributo “alt” con muchas palabras clave o copiar y pegar frases enteras
 
 
@@ -414,7 +416,7 @@ Si decides utilizar una imagen como un enlace, rellenar el texto en “alt” ay
 
 **Evita**
 
-* escribir textos largos en “alt” que puedan ser considerados como spam 
+* escribir textos largos en “alt” que puedan ser considerados como spam
 * utilizar solo enlaces en imágenes para navegar por tu página
 
 
@@ -433,12 +435,12 @@ Los diferentes tamaños de cabeceras se utilizan para crear una estructura jerá
 
 ## Practicas Recomendadas
 
-#### Imagina que estás escribiendo un esquema 
+#### Imagina que estás escribiendo un esquema
 
 Esto es parecido a escribir un esquema para un gran proyecto. Piensa sobre papel cuáles son los puntos principales y los secundarios del contenido y luego decide dónde usar las etiquetas de cabecera de forma apropiada
 
 **Evita:**
-* Colocar texto en las etiquetas de cabecera que no ayudaría a definir la estructura de la página. 
+* Colocar texto en las etiquetas de cabecera que no ayudaría a definir la estructura de la página.
 * Usar las etiquetas de cabecera cuando otras etiquetas como y puedan ser más adecuadas cambiar de un tamaño de cabecera a otro sin ninguna lógica.
 
 
@@ -448,8 +450,8 @@ Usa las etiquetas de cabecera cuando tenga sentido. Demasiadas etiquetas de cabe
 
 **Evita**
 
-* El uso excesivo de las etiquetas de cabecera en las páginas. 
-* Poner todo el texto de una página en una etiqueta de cabecera 
+* El uso excesivo de las etiquetas de cabecera en las páginas.
+* Poner todo el texto de una página en una etiqueta de cabecera
 * Usar las etiquetas de cabecera para darle formato a un texto y no para presentar la estructura de la página.
 
 # Haz un uso efectivo del robots.txt
@@ -457,43 +459,43 @@ Usa las etiquetas de cabecera cuando tenga sentido. Demasiadas etiquetas de cabe
 
 #### Restingir a los rastreadores (bots) donde no sea necesario con el robots.txt
 
-El archivo “robots.txt” les dice a los motores de búsqueda a qué partes de tu sitio pueden acceder y consecuentemente rastrear. Este archivo se debe llamar “robots.txt”, y tiene que estar en el directorio raíz de tu sitio. 
+El archivo “robots.txt” les dice a los motores de búsqueda a qué partes de tu sitio pueden acceder y consecuentemente rastrear. Este archivo se debe llamar “robots.txt”, y tiene que estar en el directorio raíz de tu sitio.
 
-Puede que haya algunas páginas de tu sitio que no quieras que sean rastreadas si no van a ser útiles para los usuarios cuando las encuentren en los resultados de búsqueda. 
+Puede que haya algunas páginas de tu sitio que no quieras que sean rastreadas si no van a ser útiles para los usuarios cuando las encuentren en los resultados de búsqueda.
 
 Si quieres evitar que los motores de búsqueda rastreen tus páginas, las Herramientas para webmasters de Google tienen un sencillo generador de robots. txt para ayudarte a crear el archivo.
 
 Hay que tener en cuenta que si tu sitio usa subdominios y quieres que algunas páginas no sean rastreadas para ese subdominio, tendrás que crear un archivo robots.txt específico de ese subdominio. Para más información sobre robots.txt, te recomendamos esta guía del Centro de asistencia: cómo usar los archivos robots.txt.
 
  Hay unas cuantas maneras más de impedir que tu contenido aparezca en los resultados de búsqueda, como por ejemplo añadir la metaetiqueta “NOINDEX”, usar .htaccess para proteger directorios con contraseña.
- 
+
  ### Practicas Recomendas
 
 #### Usa métodos más seguros para el contenido delicado
 
-No deberías quedarte tranquilo bloqueando solo con robots.txt material delicado o confidencial. 
+No deberías quedarte tranquilo bloqueando solo con robots.txt material delicado o confidencial.
 
 Una de las razones es porque los motores de búsqueda aún podrían hacer referencia a esas URL que están bloqueadas (mostrando solamente la URL, sin título ni descripción) si hay enlaces a esas URL en alguna parte de Internet (registro de remitentes - referrer logs-).
 
-Además, los motores de búsqueda que no siguen las normas de Robots Exclusion Standard podrían desobedecer las instrucciones de tu robots.txt. 
+Además, los motores de búsqueda que no siguen las normas de Robots Exclusion Standard podrían desobedecer las instrucciones de tu robots.txt.
 
 Por último, un usuario curioso podría estudiar los directorios y subdominios en tu robots.txt y adivinar la URL del contenido que no quieres que sea visto. Hay alternativas más seguras como encriptar el contenido o protegerlo con una contraseña en .htaccess.
 
 **Evita**
 
-* Permitir rastrear páginas de resultados de búsqueda muy parecidas - a los usuarios no les gusta salir de una 
-* Página de resultados de búsqueda para llegar a otra que no añade ningún valor. 
+* Permitir rastrear páginas de resultados de búsqueda muy parecidas - a los usuarios no les gusta salir de una
+* Página de resultados de búsqueda para llegar a otra que no añade ningún valor.
 * Permitir rastrear URL creadas como resultado de servicios de proxy.
 
 # Ten en cuenta rel=“nofollow” para los enlaces
 
 #### Combatir los comentarios spam con “nofollow”
 
-Establecer el valor del atributo “rel” de un enlace a “nofollow” le dice a Google que algunos enlaces de tu sitio no deben seguirse ni pasar la reputación de tu sitio a las páginas con las que enlazas. Poner “nofollow” a un enlace se consigue usando rel=“nofollow” dentro de la etiqueta de ancla. 
+Establecer el valor del atributo “rel” de un enlace a “nofollow” le dice a Google que algunos enlaces de tu sitio no deben seguirse ni pasar la reputación de tu sitio a las páginas con las que enlazas. Poner “nofollow” a un enlace se consigue usando rel=“nofollow” dentro de la etiqueta de ancla.
 
-¿Para qué puede servir esto? Si tu sitio tiene un blog con los comentarios públicos activados, los enlaces de esos comentarios pueden pasar tu credibilidad a páginas con las que no te sentirías cómodo enlazando tú mismo. Las páginas de comentarios en blogs son muy susceptibles de recibir comentarios spam. 
+¿Para qué puede servir esto? Si tu sitio tiene un blog con los comentarios públicos activados, los enlaces de esos comentarios pueden pasar tu credibilidad a páginas con las que no te sentirías cómodo enlazando tú mismo. Las páginas de comentarios en blogs son muy susceptibles de recibir comentarios spam.
 
-Usar nofollow en estos enlaces añadidos por los usuarios te asegura que no estás dando parte de tu muy lograda reputación a un sitio de spam. 
+Usar nofollow en estos enlaces añadidos por los usuarios te asegura que no estás dando parte de tu muy lograda reputación a un sitio de spam.
 
 #### Añade de forma automática “nofollow” a las columnas de comentarios y a los tablones de mensajes
 
@@ -501,7 +503,7 @@ Muchos paquetes de software para blogs añaden automáticamente este atributo a 
 
 #### Usar “nofollow” para páginas individuales, todo el dominio, etc.
 
-También puedes usar nofollow cuando estés escribiendo contenido para tu sitio y quieras hacer referencia a otra página web, pero sin comentar su credibilidad. 
+También puedes usar nofollow cuando estés escribiendo contenido para tu sitio y quieras hacer referencia a otra página web, pero sin comentar su credibilidad.
 
 Por ejemplo, imagina que estás escribiendo una entrada sobre los comentarios de spam y quieres mencionar un sitio que hace poco puso comentarios de spam en tu blog. Quieres advertir a los demás de lo que hacen en ese sitio, así que incluyes un enlace en tu texto, pero obviamente no quieres darle crédito con tu enlace. Este sería un buen uso de nofollow.
 
@@ -554,9 +556,9 @@ Uno de los problemas más comunes para los webmasters que poseen a la vez versio
 
 #### Redirige a los usuarios de móviles hacia la versión correcta
 
-Cuando un usuario de móvil o un rastreador (como GooglebotMobile) accede a la versión de una URL para ordenador, puedes redirigirlos hacia la versión correspondiente de la misma página para móviles. Google advierte la relación entre las dos versiones de la URL y muestra la versión estándar para las búsquedas realizadas desde un ordenador y la versión para móviles cuando las búsquedas se realizan desde un dispositivo móvil. Si redireccionas a los usuarios, comprueba que el contenido en las URL para móviles/ordenador sea lo más parecido posible. 
+Cuando un usuario de móvil o un rastreador (como GooglebotMobile) accede a la versión de una URL para ordenador, puedes redirigirlos hacia la versión correspondiente de la misma página para móviles. Google advierte la relación entre las dos versiones de la URL y muestra la versión estándar para las búsquedas realizadas desde un ordenador y la versión para móviles cuando las búsquedas se realizan desde un dispositivo móvil. Si redireccionas a los usuarios, comprueba que el contenido en las URL para móviles/ordenador sea lo más parecido posible.
 
-Por ejemplo, si tienes un sitio de compras y se produce un acceso a la versión de una URL para ordenador desde un teléfono móvil, asegúrate de que el usuario es redireccionado hacia la versión para móviles de la página para el mismo producto y no hacia la página principal de la versión del sitio para móviles. 
+Por ejemplo, si tienes un sitio de compras y se produce un acceso a la versión de una URL para ordenador desde un teléfono móvil, asegúrate de que el usuario es redireccionado hacia la versión para móviles de la página para el mismo producto y no hacia la página principal de la versión del sitio para móviles.
 
 De vez en cuando se encuentran sitios que utilizan este tipo de redireccionamiento en un intento por mejorar su clasificación en las búsquedas, pero esta práctica sólo perjudica a los usuarios por lo que se debería evitar a toda costa. Por otra parte, cuando se produce un acceso a una versión de una URL para móviles por parte de un navegador de un ordenador o por parte del robot de Google, no es necesario redirigirlos hacia la versión para ordenador.
 
@@ -566,11 +568,11 @@ Estos enlaces son especialmente útiles cuando el sitio para móviles no dispone
 
 #### Cambia el contenido en función del User-agent
 
-En algunos sitios se utiliza la misma URL tanto para el contenido destinado a ordenadores como para el contenido destinado a móviles, pero su formato cambia en función del User-agent. En otras palabras, los usuarios de móviles y de ordenadores acceden a la misma URL (es decir, no se utilizan redireccionamientos), pero el contenido/formato cambia ligeramente dependiendo del User-agent. 
+En algunos sitios se utiliza la misma URL tanto para el contenido destinado a ordenadores como para el contenido destinado a móviles, pero su formato cambia en función del User-agent. En otras palabras, los usuarios de móviles y de ordenadores acceden a la misma URL (es decir, no se utilizan redireccionamientos), pero el contenido/formato cambia ligeramente dependiendo del User-agent.
 
-En este caso, la misma URL aparecerá tanto en la búsqueda para móviles como en la búsqueda para ordenador, y los usuarios de ordenador podrán ver una versión del contenido para ordenador, mientras que los usuarios de móvil podrán ver la versión para móviles del mismo. 
+En este caso, la misma URL aparecerá tanto en la búsqueda para móviles como en la búsqueda para ordenador, y los usuarios de ordenador podrán ver una versión del contenido para ordenador, mientras que los usuarios de móvil podrán ver la versión para móviles del mismo.
 
-Sin embargo, ten en cuenta que si tu sitio web no se configura correctamente, éste podría incurrir en encubrimiento, lo que podría dar lugar a que el sitio web desapareciese de los resultados de búsqueda. 
+Sin embargo, ten en cuenta que si tu sitio web no se configura correctamente, éste podría incurrir en encubrimiento, lo que podría dar lugar a que el sitio web desapareciese de los resultados de búsqueda.
 
 El encubrimiento se refiere a un intento de mejorar la clasificación en los resultados de búsqueda mostrando contenidos distintos para el robot de Google y para los usuarios convencionales. Esto causa problemas tales como la aparición de resultados menos relevantes (las páginas aparecen en los resultados de búsqueda aunque su contenido realmente no esté relacionado con aquello que los usuarios ven/desean).
 
@@ -578,9 +580,9 @@ Por este motivo, nos tomamos el encubrimiento muy en serio. Entonces, ¿qué sig
 
 Como se explicaba en una entrada anterior, Google utiliza el robot de Google, “Googlebot”, para las búsquedas en la Web y el robot de Google para móviles, “Googlebot-Mobile”, para la búsqueda para móviles. Para mantenerte dentro de las directrices de Google, deberías mostrar al robot de Google el mismo contenido que vería un usuario cualquiera de ordenador, y al robot de Google para móviles lo mismo que se vería en el navegador de un dispositivo móvil convencional.
 
-Está bien que los contenidos para el robot de Google sean distintos de los destinados al robot de Google para móviles. Un ejemplo de cómo se podría detectar tu sitio web como encubrimiento por error sería si tu sitio web devolviese un mensaje como “Por favor, accede desde un teléfono móvil” a los usuarios de ordenador, pero después devolviera la versión completa para móviles a ambos rastreadores (de forma que Googlebot recibe la versión para móviles). 
+Está bien que los contenidos para el robot de Google sean distintos de los destinados al robot de Google para móviles. Un ejemplo de cómo se podría detectar tu sitio web como encubrimiento por error sería si tu sitio web devolviese un mensaje como “Por favor, accede desde un teléfono móvil” a los usuarios de ordenador, pero después devolviera la versión completa para móviles a ambos rastreadores (de forma que Googlebot recibe la versión para móviles).
 
-En este caso, la página que ven los usuarios que buscan en la web (por ejemplo, “Por favor, accede desde un teléfono móvil”) es distinta de la que Googlebot rastrea (por ejemplo, “Bienvenido a mi sitio”). 
+En este caso, la página que ven los usuarios que buscan en la web (por ejemplo, “Por favor, accede desde un teléfono móvil”) es distinta de la que Googlebot rastrea (por ejemplo, “Bienvenido a mi sitio”).
 
 De nuevo, se detecta encubrimiento ya que se quiere mostrar a los usuarios el mismo contenido relevante que los robots de Google, Googlebot o Googlebot-Mobile, rastrean.
 
@@ -601,7 +603,7 @@ Para dar a conocer nuevos servicios o contenido que tengas en tu sitio, una muy 
 Hay sitios que se han construido sobre la base de la interacción entre usuarios y que han permitido poner en contacto a gente interesada en ciertos temas con contenido relevante.
 
 **Evita**
-* Promocionar cada pequeña adición que hagas; hazlo sólo para cosas más grandes e interesantes 
+* Promocionar cada pequeña adición que hagas; hazlo sólo para cosas más grandes e interesantes
 * Involucrarte en programas donde tu contenido se promociona artificialmente
 
 #### Intenta llegar a los que estén en una comunidad cercana a la tuya
@@ -609,7 +611,7 @@ Hay sitios que se han construido sobre la base de la interacción entre usuarios
 Hay muchas probabilidades de que haya sitios que hablan de los mismos temas que tú. Establecer vías de comunicación con estos sitios suele ser beneficioso. Los temas de actualidad que aparecen en tu comunidad pueden darte ideas para escribir contenido o hacer una recopilación de recursos útiles.
 
 **Evita:**
-* Enviar peticiones masivas (spam) a todos los sitios que comparten tu temática 
+* Enviar peticiones masivas (spam) a todos los sitios que comparten tu temática
 * Comprar enlaces de otro sitio con el objetivo de aumentar tu PageRank en vez del tráfico.
 
 # Introducción
@@ -644,7 +646,7 @@ Para poder disponer del dominio debemos registrarlo bajo nuestro nombre o el nom
 
 La entidad registrante de dominios de internet en Argentina es NIC.AR ([www.nic.ar](http://www.nic.ar)).
 
-Para registrar un dominio, es necesario ingresar al sitio web, crearse un usuario, consultar por el dominio deseado y luego seguir los pasos para finalizar el registro. Actualmente (año 2015) se abona un costo anual de $160. Ej: [www.mercadolibre.com.ar](http://www.mercadolibre.com.ar). 
+Para registrar un dominio, es necesario ingresar al sitio web, crearse un usuario, consultar por el dominio deseado y luego seguir los pasos para finalizar el registro. Actualmente (año 2015) se abona un costo anual de $160. Ej: [www.mercadolibre.com.ar](http://www.mercadolibre.com.ar).
 
 Para registrar un dominio **.com** se hace un trámite muy similar pero a través de otra entidad de registro de dominios .com. Ej: [www.godaddy.com](http://www.godaddy.com). Éste es uno de los sitios que se pueden utilizar.
 
@@ -667,26 +669,26 @@ A continuación se muestra un ejemplo de uno de los servidores más conocidos de
 ## Alojar sitio web en el servidor contratado
 
 Una vez que elegimos el plan adecuado para nuestro sitio web recibiremos toda la información necesaria para poder subir los archivos al servidor y visualizar nuestra web finalmente online. Para realizar la subida de todos los archivos existen distintos métodos, el más común y generalmente más simple es a través de un cliente FTP.
- 
+
 Para elegir correctamente el plan podemos asesorarnos con el soporte técnico del hosting, que nos pedirá una serie de datos referidos a nuestro sistema web para poder darnos su opinión.
 
 ## Hosting y dominio (DNS)
 
 Teniendo en claro lo que es un dominio en Internet, nos falta el paso de relacionarlo con el servidor que hemos contratado, donde se encuentran los archivos que forman el sitio web. Para esto, tenemos que informarle a la entidad registrante del dominio cual son los DNS de nuestro servidor.
 
-La principal tarea de un servidor de DNS es traducir el nombre del dominio ([www.coderhouse.com](http://www.coderhouse.com)) en una dirección IP. 
+La principal tarea de un servidor de DNS es traducir el nombre del dominio ([www.coderhouse.com](http://www.coderhouse.com)) en una dirección IP.
 
 Las direcciones IP (Internet Protocol) constan de un número único e irrepetible con el cual se identifica una computadora conectada a una red que corre el protocolo IP. Ésta computadora es la que nos brinda el servidor para alojar nuestro sitio.
 
 Una dirección IP es un conjunto de cuatro números del 0 al 255 separados por puntos. Ej: la IP de coderhouse.com es: 184.107.100.88.
 
-Para asignar los DNS al dominio debemos acceder al panel de la cuenta que hemos creado en la entidad registrante de dominios, buscar la opción de “Delegación de dominio”, o “DNS” (su nombre puede variar), y asignamos 2 o 3 de los DNS que figuren en el email que nos envió el servidor tras haber contratado el servicio de hosting. 
+Para asignar los DNS al dominio debemos acceder al panel de la cuenta que hemos creado en la entidad registrante de dominios, buscar la opción de “Delegación de dominio”, o “DNS” (su nombre puede variar), y asignamos 2 o 3 de los DNS que figuren en el email que nos envió el servidor tras haber contratado el servicio de hosting.
 
 Por lo general una dirección DNS suele ser como en el siguiente ejemplo: ns1.panelboxmanager.com, ns2.panelboxmanager.com, ns3.panelboxmanager.com.
 
 ## Soporte técnico
 
-Todos los servidores brindan soporte para sus clientes, con la finalidad de brindar un servicio estable y seguro. Los métodos más comunes son a través de un chat online, asistencia telefónica, un sistema de tickets, etc. Éste último está disponible en el panel de control, una vez que ya tengamos creada nuestra cuenta en el sitio del hosting. 
+Todos los servidores brindan soporte para sus clientes, con la finalidad de brindar un servicio estable y seguro. Los métodos más comunes son a través de un chat online, asistencia telefónica, un sistema de tickets, etc. Éste último está disponible en el panel de control, una vez que ya tengamos creada nuestra cuenta en el sitio del hosting.
 
 Ej: Se crea un ticket, en donde escribimos nuestra consulta, y luego recibimos la respuesta por parte de un asistente técnico del servidor. Esto simularía una conversación o un intercambio de emails).
 
@@ -724,7 +726,7 @@ A continuación te detallamos algunos tips que todo programador debe tener en cu
 
 **Comentar el código**
 
-Es importante comentar el código en los lenguajes que estemos utilizando. En los estilos, en los códigos en Javascript, en los elementos ubicados en el html, etc. 
+Es importante comentar el código en los lenguajes que estemos utilizando. En los estilos, en los códigos en Javascript, en los elementos ubicados en el html, etc.
 
 Esto nos facilitará la tarea a la hora de retomar el proyecto por algun cambio o actualización que nos haya pedido el cliente.
 
@@ -775,7 +777,7 @@ Por lo general los sitios web comparten muchas similitudes, como un Acordion, un
 
 **Mantener adecuadamente tus herramientas de trabajo**
 
-Ocúpate de tu computadora que es tu elemento de trabajo. Mantenla actualizada, limpia ordenada. Esto evitará que funcione lenta y haga tu día a día una frustración constante. 
+Ocúpate de tu computadora que es tu elemento de trabajo. Mantenla actualizada, limpia ordenada. Esto evitará que funcione lenta y haga tu día a día una frustración constante.
 
 Como así también se deben mantener actualizados los navegadores para desarrollar los sitios de manera óptima.
 
@@ -792,7 +794,7 @@ Recuerda siempre trabajar con archivos optimizados en su relación peso calidad.
 # Navegadores o exploradores web más utilizados en internet
 Tradicionalmente el navegador más utilizado de internet ha sido Internet Explorer, esta ventaja es debido a su característica de estar integrado en todas las instalaciones de Windows.
 
-Durante los últimos años esta ventaja disminuye cada vez más, pese a las mejoras implementadas en la aplicacion. 
+Durante los últimos años esta ventaja disminuye cada vez más, pese a las mejoras implementadas en la aplicacion.
 La disminución de su empleo por los usuarios se debe a la popularidad alcanzada por otros navegadores alternativos, que han conseguido superarlo en velocidad y rendimiento.
 
 Algunos sitios de internet están especializados con la recopilación de estadísticas del uso de los navegadores, destacan: <a href=http://gs.statcounter.com/ target="_blank">StatCounter</a> (quizás el más popular), NetMarketShare y GlobalStats.
@@ -819,7 +821,7 @@ Otros navegadores que constituyen menos del 1% del total del tráfico son: UC Br
 #### Características y cualidades de Google Chrome
 * Navegador minimalista, es decir posee las funciones esenciales y básicas por lo que es ideal para personas con poco dominio en la navegación web.
 * Velocidad súper-rápida del navegador, para eso emplea recursos como un motor de renderizado de Javascript V8 y prefetching (precarga) de DNS para mejorar el rendimiento en la carga de páginas web. Esta última característica es una innovación reciente, Google Chrome es el único navegador que la implementa por defecto, resuelve la relación IP/Nombre de dominio y la mantiene en su cache cierto tiempo por si es solicitada nuevamente. El sistema tradicional usado hasta ahora por los otros navegadores, es que Windows es el que la almacena y la libera al apagar el sistema.
-Para ver el registro del prefetching de DNS que tienes actualmente en tu navegador escribe en la barra de direcciones **about:dns** te mostrará la dirección url, el nombre de host, tiempo de respuesta, hora a la que se resolvió, etc. 
+Para ver el registro del prefetching de DNS que tienes actualmente en tu navegador escribe en la barra de direcciones **about:dns** te mostrará la dirección url, el nombre de host, tiempo de respuesta, hora a la que se resolvió, etc.
 * Es el navegador más favorecido a la hora de hacer una búsqueda web, solo es necesario escribir la palabra o termino de búsqueda en la barra de direcciones que es multiuso.
 * Permite ver estadísticas de la memoria consumida en cada pestaña con sus detalles, inclusive la que consumen otros navegadores si se están usando simultáneamente en la misma PC. Para eso abre una nueva pestaña (CONTROL+T) y escribe: **about:memory**.
 * Google ofrece la actualización automática del navegador, lo que asegura siempre tener instalada la última versión estable y tener disponible la blacklist, lista que contiene información sobre phishing (sitios de suplantación de identidad) y malware más reciente en la red.
@@ -835,7 +837,7 @@ Para ver el registro del prefetching de DNS que tienes actualmente en tu navegad
 * Soporte para los applets de Java que funcionan mejor que en cualquier otro navegador.
 * Al ser el explorador nativo de Windows puede descargar e instalar updates (actualizaciones) para el sistema operativo desde el sitio de Microsoft.
 * Los Bookmarks, marcadores o favoritos son legítimos accesos directos que se pueden editar y modificar fácilmente por el usuario.
-* A partir de la versión 8 incorpora nuevas funcionalidades como el uso de las WebSlice (Icono de color verde que puedes ver en esta página, en la barra de comandos del navegador), compatibilidad con el estándar CSS, la posibilidad de elegir otros motores de búsquedas, disponibilidad de multitud de complementos (llamados aceleradores), etc. 
+* A partir de la versión 8 incorpora nuevas funcionalidades como el uso de las WebSlice (Icono de color verde que puedes ver en esta página, en la barra de comandos del navegador), compatibilidad con el estándar CSS, la posibilidad de elegir otros motores de búsquedas, disponibilidad de multitud de complementos (llamados aceleradores), etc.
 
 #### Características, cualidades y ventajas de usar el navegador Mozilla Firefox
 
@@ -845,7 +847,7 @@ Para ver el registro del prefetching de DNS que tienes actualmente en tu navegad
 * Permite crear y utilizar simultáneamente varios perfiles o preferencias en el mismo navegador, lo cual en la práctica es muy útil, es decir puedes tener una configuración diferente para usar Firefox en tus tareas laborales o estudiantiles y otra para tu uso privado o familiar, todo con el mismo navegador en la misma PC.
 
 #### Opera
-Es reconocido por su velocidad, seguridad, soporte de estándares (especialmente CSS), tamaño reducido y constante innovación. 
+Es reconocido por su velocidad, seguridad, soporte de estándares (especialmente CSS), tamaño reducido y constante innovación.
 Implementó ya desde sus primeras versiones la navegación por pestañas, el Speed Dial, los movimientos del ratón en la navegación, personalización por sitio, y la vista en miniatura por pestaña, tiene su versión para móviles y tabletas.
 Las últimas versiones de Opera usa el motor WebKit, el mismo que Chrome y Safari.
 Usa un nuevo diseño, bastante más limpio.
@@ -881,7 +883,7 @@ El objetivo del W3C es guiar la Web hacia su máximo potencial a través del des
 Los siguientes principios guían el trabajo del W3C.
 
 ## Web para todo el mundo
-El valor social que aporta la Web, es que ésta hace posible la comunicación humana, el comercio y las oportunidades para compartir conocimiento. Uno de los objetivos principales del W3C es hacer que estos beneficios estén disponibles para todo el mundo, independientemente del hardware, software, infraestructura de red, idioma, cultura, localización geográfica, o habilidad física o mental. 
+El valor social que aporta la Web, es que ésta hace posible la comunicación humana, el comercio y las oportunidades para compartir conocimiento. Uno de los objetivos principales del W3C es hacer que estos beneficios estén disponibles para todo el mundo, independientemente del hardware, software, infraestructura de red, idioma, cultura, localización geográfica, o habilidad física o mental.
 
 ## Web desde cualquier dispositivo
 La cantidad de dispositivos diferentes para acceder a la Web ha crecido exponencialmente. Actualmente, los teléfonos móviles, teléfonos inteligentes, PDAs, sistemas de televisión interactiva, sistemas de respuesta de voz, puntos de información e incluso algunos pequeños electrodomésticos pueden acceder a la Web.
@@ -890,10 +892,10 @@ La cantidad de dispositivos diferentes para acceder a la Web ha crecido exponenc
 La visión del W3C para la Web incluye la participación, compartir conocimiento y, de esta forma, construir confianza a gran escala.
 
 ## Web de los Autores y Consumidores
-La Web fue creada como una herramienta de comunicación para permitir el intercambio de información entre todo el mundo y desde cualquier lugar. Durante muchos años, para muchas personas la Web fue una herramienta de "solo lectura". Los blogs y wikis trajeron más autores a la Web y las redes sociales emergieron del próspero mercado para crear contenido y personalizar las experiencias en la Web. Los estándares del W3C han apoyado esta evolución gracias a la robusta arquitectura y a los principios de diseño. 
+La Web fue creada como una herramienta de comunicación para permitir el intercambio de información entre todo el mundo y desde cualquier lugar. Durante muchos años, para muchas personas la Web fue una herramienta de "solo lectura". Los blogs y wikis trajeron más autores a la Web y las redes sociales emergieron del próspero mercado para crear contenido y personalizar las experiencias en la Web. Los estándares del W3C han apoyado esta evolución gracias a la robusta arquitectura y a los principios de diseño.
 
 ## Web de los Datos y Servicios
-Algunas personas ven la Web como un repositorio gigante de datos enlazados mientras otros como un conjunto enorme de servicios que intercambian mensajes. Ambas vistas son complementarias y los requisitos de cada aplicación pueden ser los mejores determinantes para decidir que aproximación elegir para solucionar progresivamente los problemas complejos mediante tecnología Web. 
+Algunas personas ven la Web como un repositorio gigante de datos enlazados mientras otros como un conjunto enorme de servicios que intercambian mensajes. Ambas vistas son complementarias y los requisitos de cada aplicación pueden ser los mejores determinantes para decidir que aproximación elegir para solucionar progresivamente los problemas complejos mediante tecnología Web.
 
 ## Web de Confianza
 La Web ha cambiado la forma en la que nos comunicamos. Al ocurrir esto, la naturaleza de nuestras relaciones sociales ha cambiado también. En la actualidad, las personas se "conocen en Internet", y llevan a cabo relaciones personales y comerciales sin haberse visto en persona anteriormente. El W3C reconoce que la confianza es un fenómeno social, pero el diseño de las tecnologías puede fomentar la confianza y la responsabilidad. A medida que cualquier actividad se hace a través de la Web, cada vez es más importante apoyar las interacciones complejas entre distintas partes alrededor del mundo.
@@ -992,7 +994,7 @@ Sin entrar a definir la sintaxis del lenguaje, nos vamos a fijar en la primera p
 ---
 layout: index
 
-title: Servicios de red 
+title: Servicios de red
 tagline: CFGM SMR
 ---
 ```
@@ -1000,4 +1002,3 @@ tagline: CFGM SMR
 Con la variable layout indicamos el nombre del fichero html que corresponde a la plantilla que se va a usar para generar la página. Además hemos definido dos variables cuyo valor es accesible desde la plantilla con las etiquetas {{ pages.title }} y {{ page.tagline }}.
 
 Por último indicar como se accede a las distintas páginas, suponiendo que tenemos definido una página de usuario en la URL josedom24.github.io, si tenemos un fichero en la raíz proyecto.md, sería accesible con la URL josedom24.github.io/proyecto. Si el fichero proyecto.md esta dentro de una carpeta llamada “ejemplo”, sería accesible con la URL josedom24.github.io/ejemplo/proyecto. De forma similar a como funcionan los servidores web si tenemos un fichero index.md no será necesario indicar el nombre en la URL.
-

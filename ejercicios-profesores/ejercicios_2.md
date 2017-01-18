@@ -1,7 +1,8 @@
 ## Ejercicios Clase 2
 
+### 1
 * Crear tabla
-````html
+```html
 <table class="table">
     <caption>Lista de alumnos.</caption>
     <thead>
@@ -33,11 +34,12 @@
         </tr>
       </tbody>
     </table>
-````
+```
 
+### 2
 * Crear un formulario
 
-````html
+```html
 <form action="action_page.php">
   <fieldset>
     <legend>Información Personal:</legend>
@@ -48,14 +50,15 @@
     <input type="submit" value="Submit">
   </fieldset>
 </form>
-````
+```
 
+### 3
 * Crear una etiqueta video.
 
-````html
+```html
 <video controls>
   <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
   <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
   Tu navegador no implementa el elemento <code>video</code>.
 </video>
-````
+```
