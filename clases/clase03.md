@@ -24,7 +24,7 @@ La adopción de CSS por parte de los navegadores ha requerido un largo periodo d
 # Sintaxis
 
 
-La sintaxis de CSS, es bastante sencilla. Tiene tres elementos importantes. Selectores, propiedades y valores. 
+La sintaxis de CSS, es bastante sencilla. Tiene tres elementos importantes. Selectores, propiedades y valores.
 
 Cada selector, “selecciona” cual es el elemento/etiqueta del HTML al que se le va a estar aplicando el diseño. La propiedad es el aspecto de ese elector, como por ejemplo, el color, el color de fondo, los márgenes, tamaños de tipografía, etc.
 
@@ -51,7 +51,9 @@ Al igual que vimos en HTML, CSS también permite incluir comentarios entre sus r
 
 El comienzo de un comentario se indica mediante los caracteres ```/*``` y el final del comentario se indica mediante ```*/```, tal y como se muestra en el siguiente ejemplo:
 
-```/* Este es un comentario en CSS */```
+```
+/* Este es un comentario en CSS */
+```
 
 Es importante ver, que la sintaxis de los comentarios en CSS, es muy diferente a los del HTML.
 
@@ -63,9 +65,11 @@ Es importante ver, que la sintaxis de los comentarios en CSS, es muy diferente a
 
 Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. El siguiente ejemplo selecciona todos los párrafos de la página:
 
-```p {
+```
+p {
   ...
-}```
+}
+```
 
 Se pueden aplicar los mismos estilos a dos etiquetas diferentes, encadenando los selectores. En el siguiente ejemplo, los títulos de sección ```h1``` y ```h2``` comparten los mismos estilos:
 
@@ -86,18 +90,21 @@ Selecciona los elementos que se encuentran dentro de otros elementos. Un element
 
 El selector del siguiente ejemplo selecciona todos los elementos <span> de la página que se encuentren dentro de un elemento ```<p>```:
 
-```p span { color: red; } ```
- 
+```
+p span { color: red; }
+```
+
 Si el código HTML de la página es el siguiente:
 
 ```
 <p>
-...
-<span>texto1</span>
-...
-<a href="">...<span>texto2</span></a>
-...
-</p>```
+  ...
+  <span>texto1</span>
+  ...
+  <a href="">...<span>texto2</span></a>
+  ...
+</p>
+```
 
 Este estilo, solo se le va a aplicar a todos los elementos ```<span>``` que estén dentro de un elemento ```<p>```, pero si en otra parte del sitio tenemos un elemento <span> que no esté dentro de un elemento ```<p>```, entonces este estilo no se le aplica.
 
@@ -114,13 +121,16 @@ del atributo ```id``` no se puede repetir en dos elementos diferentes dentro una
 
 La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se utiliza el símbolo del numeral (```#```) en vez del punto (```.```) como prefijo del nombre de la regla CSS:
 
-```#destacado { color: red; }```
+```
+#destacado { color: red; }
+```
 
 ```
 <p>Primer párrafo</p>
 <p id="destacado">Segundo párrafo</p>
-<p>Tercer párrafo</p>```
- 
+<p>Tercer párrafo</p>
+```
+
 En el ejemplo anterior, el selector ```#destacado``` solamente selecciona el segundo párrafo (cuyo atributo id es igual a ```destacado```).
 
 
@@ -139,7 +149,8 @@ Una de las características principales de CSS es la herencia de los estilos def
   body { color: blue; }
 </style>
 
-</head>```
+</head>
+```
 
 El selector body solamente establece el color de la letra para el elemento ```<body>```. No obstante, la propiedad color es una de las que se heredan de forma automática, por lo que todos los elementos descendientes de ```<body>``` muestran ese mismo color de letra. Entonces, establecer el color de la letra en el elemento ```<body>``` de la página implica cambiar el color de letra de todos los elementos de la página.
 
@@ -166,13 +177,16 @@ Supongamos que le queremos aplicar estilos CSS sólo al primer párrafo, ¿Cómo
   <p class="destacado">Loem ipsum dolor sit amet...</p>
   <p>Nunc sed lacus et est adipiscing accumsan...</p>
   <p>Class aptent taciti sociosqu ad litora...</p>
-</body>```
+</body>
+```
 
 En el archivo CSS, se crea una nueva regla llamada ```destacado``` con todos los estilos que se van a aplicar al elemento.
 
 Para que el navegador no confunda este selector con los otros tipos de selectores, se prefija el valor del atributo ```class``` con un punto (.) tal y como muestra el siguiente ejemplo:
 
-```.destacado { color: red; }```
+```
+.destacado { color: red; }
+```
 
 El selector ```.destacado``` se interpreta como "cualquier elemento de la página cuyo atributo class sea igual a destacado", por lo que solamente el primer párrafo cumple esa condición.
 
@@ -219,9 +233,9 @@ La unidad ```em``` hace referencia al tamaño en puntos de la letra que se está
 
 Ejemplo: ```p { margin: 1em; }```
 
-La regla CSS anterior indica que los párrafos deben mostrar un margen de anchura igual a 1em. 
+La regla CSS anterior indica que los párrafos deben mostrar un margen de anchura igual a 1em.
 
-El pixel es una unidad de medida un tanto especial. La consideramos una unidad relativa porque no tiene un valor absoluto y único, sino que presenta variaciones según los dispositivos. 
+El pixel es una unidad de medida un tanto especial. La consideramos una unidad relativa porque no tiene un valor absoluto y único, sino que presenta variaciones según los dispositivos.
 
 Las pantallas suelen tener una resolución expresada en píxeles, por ejemplo 1280 x 800 px, donde el primer valor indica el número de puntos horizontales y el segundo valor el número de puntos verticales en que se divide la pantalla.
 
@@ -240,7 +254,9 @@ Los colores en CSS se pueden indicar de cinco formas diferentes: palabras clave,
 
 CSS define 17 palabras clave para referirse a los colores básicos. Las palabras se corresponden con el nombre en inglés de cada color:
 
-```aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal,white, yellow```
+```
+aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver, teal,white, yellow
+```
 
 (Falta Imagen)
 
@@ -310,7 +326,7 @@ Entre ellas vamos a ver algunas como el tamaño, el color, subrayado, interlinea
 
 La primera que vamos a ver es la familia tipográfica que queremos utilizar para mostrar el texto, esta propiedad se llama ```font-family```.
 
-Ejemplo: 
+Ejemplo:
 
 ```
 p { font-family: Arial; }
@@ -546,19 +562,23 @@ Cuando encontremos la tipografía que nos guste, se debe hacer clic en la opció
 
 Por ejemplo, si decidimos usar la fuente “Euphoria Script”, creada por Sabrina López, incluiremos la siguiente línea de código dentro del elemento ```<head>``` del documento HTML.
 
-```<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>```
+```
+<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+```
 
 Con esto ya hemos incluido de alguna forma la fuente “Euphoria Script” en nuestro sitio web. Ahora, podremos aplicarla a los elementos que deseemos mediante la propiedad ```font-family``` de CSS, como se muestra en el siguiente ejemplo, que aplica esta fuente al elemento ```<h1>```.
 
-```h1 {
+```
+h1 {
 font-family: 'Euphoria Script', cursive;
-}```
+}
+```
 
 Esta es la manera más utilizada para agregar fuentes a nuestro sitio web.
 
 
 ## Ionicons
-Ionicons es una interesante plataforma que trae más de 400 fuentes de iconos gratuitos de calidad listos para ser empleados en cualquier tipo de proyecto web (comerciales, personales, etc.) y cuya temática va desde iconos sociales, multimedia, comentarios, cargadores, mapas, hasta otros elementos de interfaz de usuario. 
+Ionicons es una interesante plataforma que trae más de 400 fuentes de iconos gratuitos de calidad listos para ser empleados en cualquier tipo de proyecto web (comerciales, personales, etc.) y cuya temática va desde iconos sociales, multimedia, comentarios, cargadores, mapas, hasta otros elementos de interfaz de usuario.
 
 
 ```
@@ -596,12 +616,12 @@ No solo podemos aplicar color, sino que además podemos aplicar una imagen como 
 
 Las imágenes de fondo se indican a través de su URL, que puede ser absoluta o relativa. Suele ser recomendable crear una carpeta de imágenes que se encuentre en el mismo directorio que los archivos CSS y que almacene todas las imágenes utilizadas en el diseño de las páginas.
 
-CSS nos permite establecer de forma simultánea un color y una imagen de fondo. De hecho, es recomendable aplicar ambas, ya que si por alguna razón, no se muestra la imagen de fondo, vamos a poder ver el color. 
+CSS nos permite establecer de forma simultánea un color y una imagen de fondo. De hecho, es recomendable aplicar ambas, ya que si por alguna razón, no se muestra la imagen de fondo, vamos a poder ver el color.
 
 Ejemplo:
 
 ```
-body { 
+body {
   background-image: url("imagenes/fondo.jpg")
 }
 ```
@@ -615,7 +635,7 @@ CSS permite modificar el aspecto de cada uno de los cuatro bordes de la caja de 
 
 El grosor de los bordes, se indica mediante una unidad de medida, como el pixel. La propiedad que utilizamos para esto, se llama ```border-width```.
 
-Como ya vimos antes, podemos utilizar esta propiedad indicando específicamente a que lado le queremos aplicar el estilo, o podemos utilizar la propiedad por sí sola. 
+Como ya vimos antes, podemos utilizar esta propiedad indicando específicamente a que lado le queremos aplicar el estilo, o podemos utilizar la propiedad por sí sola.
 
 Ejemplo:
 
@@ -643,9 +663,9 @@ En este caso, CSS no da varias opciones. El estilo de nuestro borde puede ser pu
 
 Para poder seleccionar que estilo queremos, debemos utilizar uno los valores que CSS ya tiene definido.
 
-Los valores son: ```none``` | ```hidden``` | ```dotted``` | ```dashed``` | ```solid``` | ```double``` | ```groove``` | ```ridge``` | ```inset``` | ```outset``` 
+Los valores son: ```none``` | ```hidden``` | ```dotted``` | ```dashed``` | ```solid``` | ```double``` | ```groove``` | ```ridge``` | ```inset``` | ```outset```
 
-Los mismos se ven a de la siguiente manera: 
+Los mismos se ven a de la siguiente manera:
 
 Para establecer de forma simultánea los estilos de todos los bordes de una caja, utilizamos la propiedad llamada border-style.
 
@@ -660,13 +680,13 @@ div {
 }
 ```
 
-Al igual que sucede con los márgenes y los padding, CSS define una serie de propiedades de tipo"shorthand" que permiten establecer todos los atributos de los bordes de forma simultánea. 
+Al igual que sucede con los márgenes y los padding, CSS define una serie de propiedades de tipo"shorthand" que permiten establecer todos los atributos de los bordes de forma simultánea.
 Esta propiedad global se llama ```border```.
 
 Ejemplo:
 
 ```
-div { 
+div {
 border: 1px solid #cccccc;
 }
 ```
@@ -683,7 +703,7 @@ En los casos que elegimos que la imagen no se repita, lo que sucede es que esta 
 Esta propiedad puede manejarse con palabras clave, como ```top```, ```bottom```, ```center```, ```left``` y ```right```. Estas también se pueden combinar. Por ejemplo podemos decir que nuestra imagen de fondo esté alineada ```top center```.
 
 ```
-body { 
+body {
   background-image: url("imagenes/fondo.jpg") repeat-x;
   background-position: top center;
 }
@@ -696,7 +716,7 @@ Otra opción es utilizar números, de esta manera vamos a poder indicar la coord
 El modo de escribirlo es el siguiente:
 
 ```
-body { 
+body {
   background-image: url("imagenes/fondo.jpg") repeat-x;
   background-position: 10px 20px;
 }
