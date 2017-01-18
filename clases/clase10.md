@@ -12,7 +12,8 @@ Acceder a [http://getbootstrap.com/](http://getbootstrap.com/) y descargar el fr
 
 Te encontrarás con la siguiente estructura:
 
-```bootstrap/
+```
+bootstrap/
     css/
         bootstrap.css
         bootstrap.min.css
@@ -20,10 +21,11 @@ Te encontrarás con la siguiente estructura:
         bootstrap-responsive.min.css
     img/
         glyphicons-halflings-white.png
-        glyphicons-halflings.png 
+        glyphicons-halflings.png
     js/
         bootstrap.js
-        bootstrap.min.js```
+        bootstrap.min.js
+```
 
 Como verán, cada archivo se tiene dos variantes, los archivos compilados (bootstrap.*) y los archivos compilados y además comprimidos (bootstrap.min.*), agregándose la palabra “min” que hace referencia a “minificado”. También se incluyen dos imágenes con los iconos de Glyphicons en color blanco y color negro.
 
@@ -58,9 +60,10 @@ css/
     bootstrap.css
     bootstrap-responsive.css
 js/
-    	bootstrap.js```
+    	bootstrap.js
+```
 
-Ahora vamos a analizar cada uno de los elementos que son clave a la hora de utilizar y entender Bootstrap. 
+Ahora vamos a analizar cada uno de los elementos que son clave a la hora de utilizar y entender Bootstrap.
 
 **Encabezado del documento**
 
@@ -68,13 +71,16 @@ Ahora vamos a analizar cada uno de los elementos que son clave a la hora de util
 <!DOCTYPE html>
 <html lang="en">
   ...
-</html>```
+</html>
+```
 
 **Viewport Tag**
 
 Tag para que el sitio se adapte a los estilos responsivos, esencial para dispositivos móviles.
 
-```<meta name="viewport" content="width=device-width, initial-scale=1">```
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
 **Normalize.css**
 
@@ -90,14 +96,16 @@ Bootstrap utiliza dos tipos de contenedores:
 <div class="container">
   ...
 </div>
-.container```
+.container
+```
 
 Tiene un ancho variable, que va a depender de la resolución de pantalla del usuario. Esto lo va averiguar bootstrap y va a setearle el ancho correspondiente. Por ejemplo, si el usuario utiliza una resolución de 1024x768, el ancho de ```.container``` va a ser de 970px de ancho.  
 
 ```
 <div class="container-fluid">
  ...
-</div>```
+</div>
+```
 
 En este caso, cuando el contendor es fluid, el ancho siempre será de 100%, brindándonos la posibilidad renderizar un div full width.
 
@@ -116,7 +124,9 @@ Todos los tags de ```<h1>``` a ```<h6>``` están estilados por Bootstrap. Como t
 
 Otro ejemplo de estilo de texto puede ser para destacar un párrafo como en el siguiente ejemplo:
 
-```<p class="lead">...</p>```
+```
+<p class="lead">...</p>
+```
 
 Ver más ejemplos de texto con estilo en [http://getbootstrap.com/css/#type](http://getbootstrap.com/css/#type)
 
@@ -186,7 +196,9 @@ Al utilizar la clase ```col-sm-6```, obtendremos los estilos correspondientes so
 
 Esto quiere decir que podemos nombrar un div con dos clases diferentes, que proporcionarán distintos estilos al mismo elemento, pero eso no nos preocupará, ya que solo se cargarán los estilos que correspondan según el dispositvo que está renderizando la página en ese momento.
 
-```<div class="col-md-4 col-sm-6">```
+```
+<div class="col-md-4 col-sm-6">
+```
 
 De esta manera logramos que el elemento ocupe distintas columnas de la grilla, dependiendo de la resolución del usuario, sin agregar o modificar el archivo de estilos, lo cual ahorra mucho tiempo a la hora del ajuste responsivo.
 
@@ -219,7 +231,8 @@ Entre otros elementos, las tablas también están estiladas por el framewoork co
 ```
 <table class="table table-striped">
   ...
-</table>```
+</table>
+```
 
 Ver más estilos de tablas en [http://getbootstrap.com/css/#tables](http://getbootstrap.com/css/#tables)
 
@@ -253,7 +266,8 @@ Ver más estilos de tablas en [http://getbootstrap.com/css/#tables](http://getbo
 ```
 <img src="..." alt="..." class="img-rounded">
 <img src="..." alt="..." class="img-circle">
-<img src="..." alt="..." class="img-thumbnail">```
+<img src="..." alt="..." class="img-thumbnail">
+```
 
 # Más información
 
@@ -265,7 +279,7 @@ Ver más en  [http://getbootstrap.com/](http://getbootstrap.com/)
 ![](http://i.imgur.com/V5tNZ8y.jpg)
 ```
 <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" 
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
 
 aria-expanded="true">
     Dropdown
