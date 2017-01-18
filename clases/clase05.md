@@ -1,47 +1,4 @@
-# ¿Qué es flexbox?
-
-Flexbox es un modo de diseño que nos permite crear estructuras para sitios web de una forma más fácil. Si ya sabes de HTML y CSS probablemente alguna vez habrás visto que los sitios web se realizan utilizando la propiedad float, para desplazar contenedores. Con Flexbox ya no necesitaras usar float para posicionar tus elementos, al contrario, con Flexbox podrás posicionar y distribuir los elementos como tú quieras.
-
-Puedes posicionar un elemento en la posición que desees horizontalmente y por si fuera poco también en forma vertical. Posicionar elementos de forma vertical no es tarea fácil sin Flexbox, incluso muchas veces teníamos que hacer uso de Javascript para hacer cálculos y saber cuánto margen poner a un elemento para centrarlo verticalmente.
-
-No solo puedes posicionar elementos vertical y horizontalmente, sino que puede establecer como se distribuirán, el orden que tendrán e incluso el tamaño que tendrán en proporción a otros elementos. Esto es perfecto para crear diseños adaptables a dispositivos móviles (Responsive Design).
-
-Flexbox no es una propiedad ni un conjunto de propiedades. Flexbox es un nuevo modelo de layout que viene a incorporarse a los ya existentes en css (se está trabajando actualmente en nuevo modelo: el grid layout):
-
-* Block (los elementos aparecen uno debajo de otro ocupando todo el ancho disponible)
-
-* Inline (los elementos aparecen uno al lado del otro en una linea y saltan a la linea siguiente al ocupar el espacio disponible)
-
-* Table (los elementos imitan la distribución de una tabla HTML, con filas, encabezados y columnas).
-
-* Positioned (los elementos pueden romper el flujo y posicionarse en cualquier lugar del documento).
-
-Un modelo de layout es un set de algoritmos que determinan el tamaño y la posición de los elementos con respecto a sus hermanos y ancestros.
-
-# ¿Qué se puede hacer con flexbox?
-
-Entendiendo lo que significa un modelo de layout, con flexbox podemos hacer lo siguiente:
-
-* Distribuir los elementos en sentido vertical u horizontal.
-
-* Reordenar la aparición de los elementos sobreescribiendo su aparición en el navegador.
-
-* Ajustar dinámicamente las dimensiones de los elementos para evitar desbordamientos (overflow) respecto a su padre.
-
-* Redefinir el sentido del flujo de los elementos (hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha).
-
-* Alinear los elementos respecto al padre o respecto a sus hermanos.
-
-# Conceptos básicos de Flexbox
-
-Para entender bien este modelo de Layout debemos de entender algunos conceptos básicos. Primero la disposición flex debe de estar constituido por elementos padres e hijos, el padre será el contenedor Flexible “flex container” y los hijos inmediato serán los elementos Flexibles “flex item”.
-
-
-![](http://i.imgur.com/djzs3zF.jpg)
-
-En la imagen anterior vemos como la W3C nos presenta gráficamente el modelo flexbox con sus diferentes propiedades y su pensado funcionamiento.
-
-----------------
+# Más Sobre Flexbox
 
 ### Propiedades para utilizar en Flexbox
 
@@ -150,7 +107,7 @@ Con el valor column-reverse los flex items se apilan en una columna de abajo hac
 
 ### 2. flex-wrap
 
-El comportamiento inicial del contenedor flexible es poder mantener los flex items en su main axis o eje horizontal sin importar que las dimensiones de estos items cambien, pero hay ocasiones donde vamos a querer controlar este alineamiento y hacer que los elementos puedan saltar de linea para poder mantener una apariencia deseada en estos flex items. Con flex-wrap vamos a poder especificar si queremos que los items puedan saltar a una nueva linea si el contenedor flexible se queda sin espacio. 
+El comportamiento inicial del contenedor flexible es poder mantener los flex items en su main axis o eje horizontal sin importar que las dimensiones de estos items cambien, pero hay ocasiones donde vamos a querer controlar este alineamiento y hacer que los elementos puedan saltar de linea para poder mantener una apariencia deseada en estos flex items. Con flex-wrap vamos a poder especificar si queremos que los items puedan saltar a una nueva linea si el contenedor flexible se queda sin espacio.
 
 Veamos los valores de la propiedad flex-wrap:
 
@@ -499,7 +456,7 @@ El flex es la manera rápida de configurar a un item las tres propiedades anteri
 
 ```
 .item {
-  flex: none | <'flex-grow'> <'flex-shrink'> <flex-basis'> 
+  flex: none | <'flex-grow'> <'flex-shrink'> <flex-basis'>
 }
 ```
 
@@ -514,3 +471,94 @@ Esta propiedad permite modificar el orden de aparición de un elemento. Recibe c
   order: <integer>;
 }
 ```
+
+# Gradientes
+
+CSS3 ha agregado la opción de crear gradientes (fondos en degradé) sin la necesidad de usar imágenes.
+
+Los gradientes en CSS son de dos tipos: lineales (```linear-gradient```) o radiales (```radial-gradient```). En el gradiente lineal, la transformación de color va avanzando línea a línea, mientras que en el radial, la transformación de color se produce debido a que sucesivos círculos concéntricos van cambiando de color.
+
+La propiedad que utilizamos para realizar gradientes lineales, se llama ```linear-gradient``` y esta se agrega al atributo ```background```, que ya vimos con anterioridad.
+
+Esta propiedad maneja dos opciones de parámetros, podemos elegir el punto de inicio o sea si queremos que lo aplique arriba, abajo, a la derecha o a la izquierda de nuestra caja o podemos elegir los grados de inclinación que queremos que tenga nuestro gradiente.
+
+Los puntos de inicio pueden ser ```top```, ```right```, ```left``` o ```bottom```.
+
+Entonces, supongamos que queremos aplicarle a nuestra caja un gradiente que va de negro a gris desde la parte de arriba de la misma. La sintaxis sería la siguiente:
+
+```
+div {
+  background: linear-gradient (to top, #000, #ccc)
+}
+```
+
+Si lo que queremos es aplicar un gradiente de 90º, entonces la sintaxis sería así:
+
+```
+div {
+  background: linear-gradient (90deg, #000, #ccc)
+}
+```
+
+Algunas cosas a tener en cuenta, la propiedad ```linear-gradient``` no genera un color de fondo, sino una imagen sin dimensiones específicas, esta se va a adaptar automáticamente para cubrir todo el espacio disponible.
+
+Por otro lado, no todos los navegadores soportan esta propiedad.
+
+# Transformaciones
+
+Las transformaciones CSS ofrecen la posibilidad de modificar el desplazamiento, escala, rotación, sesgo de elementos y en combinación con las transiciones nos permite crear animaciones css modificando gradualmente sus propiedades.
+
+De las transformaciones de CSS3 en 2D, las más usadas son:
+
+* **Rotate**: Rotate te permite rotar un elemento dándole un ángulo de giro en grados.
+* **Scale**: Scale te permite escalar un elemento, toma valores positivos y negativos y se le pueden poner decimales.
+* **Translate**: Translate nos permite trasladar un elemento a la vez en el eje de las X y de las Y, dándole las coordenadas iniciales y finales.
+* **Trasladar**: Esta propiedad de CSS3 no hace propiamente una transición, sino que hace que un elemento pase de estar en una posición a estar en otra. Con las transiciones y las animaciones de CSS3 vamos a poder darle un efecto visual de movimiento.
+
+Ejemplo:
+
+```
+transform: translate(10px, 20px);
+```
+
+![](https://coderhouse.gitbooks.io/clase-5-fundamentos/content/Captura%20de%20pantalla%202015-10-08%2011.59.56.png)
+
+**Rotación**: Se puede aplicar tanto a elemento inline como a elementos de bloque.
+
+![](https://coderhouse.gitbooks.io/clase-5-fundamentos/content/Captura%20de%20pantalla%202015-10-08%2012.00.04.png)
+
+```
+.ejemplo {
+  transform: rotate (45deg);
+}
+```
+
+Los grados se marcan en positivo si el elemento se rota en el sentido de las agujas del reloj y en negativo si es al revés.
+
+Por defecto, el punto de referencia que toma como eje para hacer la rotación es el centro, pero también se puede especificar otro punto.
+
+**Escalar**: Otro punto interesante va a ser escalar un elemento con CSS3.
+
+![](https://coderhouse.gitbooks.io/clase-5-fundamentos/content/Captura%20de%20pantalla%202015-10-08%2012.00.12.png)
+
+Si el valor es positivo, el elemento se hace más grande, y si es negativo se hace más pequeño.
+
+--------------------
+
+# Transiciones
+
+Las transiciones permiten controlar la velocidad a la que se van a modificar las propiedades de un elemento inclusive se pueden aplicar curvas de aceleración permitiendo de esta forma crear animaciones.
+
+# Animaciones
+
+Una animación tiene lugar en el tiempo, con lo que vamos a tener que tomar diferentes puntos dentro de un fragmento de tiempo para especificar que sucede en cada uno de ellos. Es lo que se llaman **keyframes**. Para los que ya han trabajado en Flash u otros programas de animación ya conocen el concepto. En cada keyframe podemos introducir un cambio y la suma de estos cambios es lo que va a dar lugar a la animación final.
+
+Para indicar la duración de una animación utilizaremos la propiedad ```animation-duration```.
+
+La velocidad de la animación estará gestionado por la propiedad ```animation-timing-function```.
+
+También en las animaciones de CSS3 podemos especificar un tiempo de espera antes de iniciar la animación con la propiedad ```animation-delay```.
+
+Con la propiedad ```animation-direction``` podremos indicarle que la propiedad se haga en sentido inverso al habitual, es decir, que empiece por el final.
+
+Para aprender más sobre esto, pueden ver [http://daneden.github.io/animate.css/](http://daneden.github.io/animate.css/)
