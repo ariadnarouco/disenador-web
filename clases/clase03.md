@@ -61,8 +61,6 @@ Es importante ver, que la sintaxis de los comentarios en CSS, es muy diferente a
 
 ## **Selector de etiqueta**
 
-
-
 Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. El siguiente ejemplo selecciona todos los párrafos de la página:
 
 ```
@@ -81,6 +79,7 @@ CSS permite agrupar todas las reglas individuales en una sola regla con un selec
 <iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/aOxoLB/?height=268&theme-id=14781&default-tab=' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/aOxoLB/'>CSS - 2.3.1. Selectores básicos 2</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
+[Ejercicio Profesor CSS Básico](../ejercicios-profesores/ejercicios_3.md#1)
 
 ## **Selector descendiente**
 
@@ -108,11 +107,7 @@ Si el código HTML de la página es el siguiente:
 
 Este estilo, solo se le va a aplicar a todos los elementos ```<span>``` que estén dentro de un elemento ```<p>```, pero si en otra parte del sitio tenemos un elemento <span> que no esté dentro de un elemento ```<p>```, entonces este estilo no se le aplica.
 
-
-
 ## **Selector de ID**
-
-
 
 A veces, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede utilizarse un selector de clase para aplicar estilos a un único elemento, existe otro selector más eficiente en este caso
 
@@ -132,7 +127,6 @@ La sintaxis de los selectores de ID es muy parecida a la de los selectores de cl
 ```
 
 En el ejemplo anterior, el selector ```#destacado``` solamente selecciona el segundo párrafo (cuyo atributo id es igual a ```destacado```).
-
 
 ## **Herencia**
 
@@ -155,8 +149,6 @@ Una de las características principales de CSS es la herencia de los estilos def
 El selector body solamente establece el color de la letra para el elemento ```<body>```. No obstante, la propiedad color es una de las que se heredan de forma automática, por lo que todos los elementos descendientes de ```<body>``` muestran ese mismo color de letra. Entonces, establecer el color de la letra en el elemento ```<body>``` de la página implica cambiar el color de letra de todos los elementos de la página.
 
 # **Selector de clase**
-
-
 
 Si queremos aplicar estilos a un elemento en particular de nuestra página, el mejor modo es utilizar el atributo ```class``` de HTML sobre ese elemento. De esta manera le podemos indicar directamente la regla CSS que le queremos aplicar.
 
@@ -196,6 +188,8 @@ Ver ejemplo:
 
 <iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/vOMGLJ/?height=268&theme-id=14781&default-tab=' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/vOMGLJ/'>CSS - 2.3.1. SELECTORES BÁSICOS 3</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
+
+[Ejercicio Profesor CSS Clase](../ejercicios-profesores/ejercicios_3.md#2)
 
 # Valores y unidades
 * Unidades de medida
@@ -349,7 +343,7 @@ Ejemplo:
 ```
 p { font-family: Arial, Helvetica, sans-serif;}
 ```
-
+[Ejercicio Profesor CSS Fuentes](../ejercicios-profesores/ejercicios_3.md#3)
 
 ## Tamaño
 
@@ -413,9 +407,6 @@ h1 { font-weight: bold; color: #cccccc; }
 p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: italic; letter-spacing: 5px; word-spacing: 10px; line-height: 18px; }
 ```
 
-
-
-
 ## Alineación del texto
 
 Una de las propiedades más importantes con respecto al texto, es su alineación. Podemos elegir si queremos que el texto se vea alineado a la izquierda, a la derecha, centrado o justificado.
@@ -435,10 +426,6 @@ p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: ital
 ```
 
 En este caso, decidimos que todos nuestro títulos H1 estén alineados al centro y todos nuestros párrafos hacia la izquierda.
-
-
-
-
 
 ## Decoración y transformación de texto
 
@@ -469,9 +456,6 @@ h1 { font-weight: bold; color: #cccccc; text-align: center; text-transform: uppe
 
 p { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-style: italic; letter-spacing: 5px; word-spacing: 10px; line-height: 18px; text-align: left; }
 ```
-
-
-
 
 ## Listas
 
@@ -576,6 +560,7 @@ font-family: 'Euphoria Script', cursive;
 
 Esta es la manera más utilizada para agregar fuentes a nuestro sitio web.
 
+[Ejercicio Profesor CSS Fuentes Google](../ejercicios-profesores/ejercicios_3.md#4)
 
 ## Ionicons
 Ionicons es una interesante plataforma que trae más de 400 fuentes de iconos gratuitos de calidad listos para ser empleados en cualquier tipo de proyecto web (comerciales, personales, etc.) y cuya temática va desde iconos sociales, multimedia, comentarios, cargadores, mapas, hasta otros elementos de interfaz de usuario.
@@ -590,6 +575,8 @@ http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
 
 
 Para más ejemplos y obtener mayor información se puede visitar: http://ionicframework.com/getting-started/
+
+[Ejercicio Profesor CSS Iconos](../ejercicios-profesores/ejercicios_3.md#5)
 
 # Fondos
 
