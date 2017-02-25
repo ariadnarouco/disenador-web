@@ -4,14 +4,15 @@
 
   * Cómo interpretar un diseño
   * Diseño (Photoshop vs Mockups)
-  * Estructura HTML 
+  * Historia de HTML
+  * Estructura HTML
   * Etiquetas Básicas:
     * Textos
     * Encabezados
     * Div y Span
   * Etiquetas semánticas HTML5
   * Trabajo Práctico :white_check_mark:
-  
+
 ## HTML
 
   * Listas
@@ -24,8 +25,8 @@
   * Imágenes
   * Audio y Videos
   * Trabajo Práctico :white_check_mark:
- 
-## CSS 
+
+## CSS
 
   * Historia
   * Sintaxis, Comentarios, Carga de Archivos CSS
@@ -36,8 +37,8 @@
   * Fuentes, colores
   * Recursos: Google Font, Ionicons
   * Trabajo Práctico :white_check_mark:
- 
-## CSS - Modelo de Cajas & Ubicación de elementos 
+
+## CSS - Modelo de Cajas & Ubicación de elementos
 
   * Definición
   * Bordes
@@ -48,7 +49,7 @@
   * Float
   * Flexbox
   * Trabajo Práctico :white_check_mark:
- 
+
 ## CSS - Ubicación de elementos & más!
 
   * Más sobre Flexbox
@@ -58,7 +59,7 @@
   * Transformación
   * Animación en CSS
   * Trabajo Práctico :white_check_mark:
- 
+
 ## CSS - Diseño Responsivo, Media Queries, Git.Github
 
   * ¿Qué es un diseño responsivo?
@@ -72,14 +73,14 @@
   * Clonar un repositorio
   * Subir cambios al repositorio remoto
   * Trabajo Práctico :white_check_mark:
-  
------------- 
+
+------------
 
 ## :star: Workshop I :star:
 
 ------------
- 
-## SASS 
+
+## SASS
 
   * Definición
   * Instalación
@@ -91,7 +92,7 @@
   * Operadores matemáticos
   * Trabajo Práctico :white_check_mark:
 
-## LESS & SEO Tips 
+## LESS & SEO Tips
 
   * Instalación
   * Variables
@@ -104,7 +105,7 @@
   * SEO Tips (primera parte)
   * Trabajo Práctico :white_check_mark:
 
-## Bootstrap & SEO Tips 
+## Bootstrap & SEO Tips
 
   * Qué son los frameworks CSS
   * Función
@@ -130,7 +131,7 @@
 
 ------------
 
-## Accesibilidad & SEO Tips 
+## Accesibilidad & SEO Tips
 
   * Pautas de Accesibilidad al Contenido del W3C
   * Elementos
@@ -145,7 +146,7 @@
     * Tablas
   * SEO Tips (cuarta parte)
   * Trabajo Práctico :white_check_mark:
- 
+
 ## Fundamentos Web & SEO Tips
 
   * Validación

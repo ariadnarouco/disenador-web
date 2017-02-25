@@ -2,12 +2,56 @@
 
   * Cómo interpretar un diseño
   * Diseño (Photoshop vs Mockups)
+  * Historia de HTML
   * Estructura HTML
   * Etiquetas Básicas:
     * Textos
     * Encabezados
     * Div y Span
   * Etiquetas semánticas HTML5
+
+# Cómo interpretar un diseño
+
+Lo primero que nos preguntamos al comenzar a aprender programación para la web es: ¿cómo llevo un diseño a código? y la respuesta suele no ser tan sencilla. La web funciona hoy en día utilizando 3 lenguajes principales: HTML, CSS y Javascript, los cuales tienen sus roles claramente definidos:
+
+* HTML: encargado de estructurar el contenido del sitios
+* CSS: encargado de dar el estilo y de posicionar los elementos en la pantalla
+* Javascript: a cargo de la inteligencia y dinamismo de la página
+
+Para llevar nuestra idea a la realidad, primero debemos enfocarnos en los 2 primeros: HTML y CSS.
+
+Existen 2 aproximaciones diferentes para traspasar nuestra ideas, bosquejos y/o diseños a código las cuales veremos en la siguiente sección.
+
+# Diseño (Photoshop vs Mockups)
+
+Veremos 2 maneras de traspasar nuestras ideas, bosquejos y/o diseños a código.
+
+## Photoshop
+
+![Comenzando desde el diseño](../assets/screenshot.jpg)
+
+Para los que vienen de un mundo más enfocado en el diseño, el trabajar con un archivo PSD como punto de partida es lo más sencillo. La transformación de un diseño establecido a código se basa en ir subdividiendo en pequeños bloques el diseño de manera de ir atomizando nuestro diseño para que el traspaso a un par de etiquetas de HTML sea lo más directo posible. Parte de este proceso es lo que veremos a lo largo de todo este curso.
+
+### Ventajas
+
+* Visualización del resultado esperado desde el día 1.
+* Avances pequeños poseen mayor impacto en el resultado en procesos intermedio lo que aumenta la motivación
+* No hay que estar en sincronía con el equipo de diseño para poder seguir avanzando debido a que el resultado final ya está definido.
+
+
+## Mockups
+
+![Comenzando desde el bosquejo](../assets/mockup.jpg)
+
+El otro aproach se basa más en hacer un bosquejo dejando la parte estetica para una tapa posterior o bien en paralelo respecto al desarrollo del sitio web. Para ello al realizar un Mockups la preocupación principal va a radicar en el contenido y la estructura de este a grozo modo en nuestro sitio.
+
+Existen diversas herramientas que hacen del proceso de generar un bosquejo algo más sencillo y estandarizado que simplemente tomar una hoja de papel y dibujar, dejando en claro que esto último es igual de válido.
+
+### Ventajas
+
+* Tanto diseñadores como programadores parten el trabajo de un punto en común lo que para equipos grandes permite el trabajo en paralelo.
+* Llevar un bosquejo a una estructura HTML suele ser más sencillo debido a la simplicidad y "minimalismo" que estos tienen.
+* Foco en la estructura y en como presentar el contenido en el espacio, ideal para trabajar la experiencia de usuario.
 
 # Historia del HTML
 
@@ -77,6 +121,8 @@ Utilizaremos todas estas etiquetas en nuestro primero ejemplo de estructura web:
 ```
 [Ejercicio Profesor DOCTYPE](../ejercicios-profesores/ejercicios 1.md#1)
 
+# Etiquetas Básicas
+
 ## Sintaxis HTML
 
 El elemento principal del html es el de etiqueta, éstas sirven para especificar el tipo de contenido al navegador.
@@ -132,6 +178,15 @@ El signo **/** se utiliza para las etiquetas de cierre; en las etiquetas cerrada
 * ```<mark>```: Define el texto <mark>resaltado</mark>.
 
 [Ejercicio Profesor Formato](../ejercicios-profesores/ejercicios_1.md#2)
+
+### Tags de usos múltiples
+
+Existen dos etiquetas las cuales son utilizadas principalmente para dar formato y orden, podríamos decir que son etiquetas "comodín", estas son:
+
+* ```<div>```: Define un bloque de información sin formato predefinido
+* ```<span>```: Define un elemento en linea sin formato predefinido
+
+Con la introducción de las etiquetas semanticas, la utilización de estas etiquetas se ha disminuido un poco debido a que gran parte de su uso era principalmente enfocado en estructurar nuestros sitios web.
 
 # Etiquetas Semánticas
 HTML5 incorpora etiquetas semánticas que no sólo generan estructura, si no que también define su contenido.

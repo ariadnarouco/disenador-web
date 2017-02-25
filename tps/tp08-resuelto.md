@@ -1,20 +1,20 @@
 ## main.scss
 
-````css
+```css
 @import "reset";
 @import "variables";
 @import "header";
 @import "core";
 @import "footer";
-````
+```
 ## _reset.scss
 
-````css
+```css
 *{
     margin: 0;
     padding: 0;
 }
-````
+```
 
 ## _variables.scss
 
@@ -25,12 +25,12 @@ $primary-color: #292c2f;
 ## core.scss
 
 ````css
-body{ 
-    font-family: 'Open Sans', sans-serif; 
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 
 .item{
-    margin: auto; 
+    margin: auto;
 }
 .flex-container {
   display: flex;
@@ -61,7 +61,7 @@ h2{
         margin-top: 10px;
         margin-bottom: 10px;
         float:right;
-    
+
 }
 ````
 
@@ -82,7 +82,7 @@ h2{
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
-    
+
     }
 }
 
@@ -309,4 +309,4 @@ nav a:hover{
     }
 }
 
-````
+```
