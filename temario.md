@@ -30,13 +30,13 @@
 ## CSS
 
   * Historia
-  * Sintaxis, Comentarios, Carga de Archivos CSS
-  * Uso de ‘Normalize.css’
+  * Sintaxis, Comentarios
   * Selectores
   * Clases
   * Valores y Unidades
   * Fuentes, colores
   * Recursos: Google Font, Ionicons
+  * Fondos
   * Trabajo Práctico :white_check_mark:
 
 ## CSS - Modelo de Cajas & Ubicación de elementos

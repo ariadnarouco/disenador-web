@@ -1,3 +1,14 @@
+# CSS
+
+  * Historia
+  * Sintaxis, Comentarios
+  * Selectores
+  * Clases
+  * Valores y Unidades
+  * Fuentes, colores
+  * Recursos: Google Font, Ionicons
+  * Fondos
+
 # Historia de CSS
 
 Las hojas de estilos aparecieron poco después que el lenguaje de etiquetas SGML, alrededor del año 1970. Desde la creación de SGML, se observó la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electrónicos.
@@ -16,11 +27,6 @@ El 12 de Mayo de 1998, el grupo de trabajo de CSS publica su segunda recomendaci
 
 La adopción de CSS por parte de los navegadores ha requerido un largo periodo de tiempo. El mismo año que se publicó CSS 1, Microsoft lanzaba su navegador Internet Explorer 3.0, que disponía de un soporte bastante reducido de CSS. El primer navegador con soporte completo de CSS 1 fue la versión para Mac de Internet Explorer 5, que se publicó en el año 2000.
 
-# Estructura
-
-* Sintaxis
-* Comentarios
-
 # Sintaxis
 
 
@@ -34,8 +40,10 @@ Un archivo CSS, está compuesto por muchos selectores y cada selector puede tene
 
 Ejemplo:
 
+```html
 <iframe height='268' scrolling='no' src='//codepen.io/team/coderhouse/embed/WvLOYJ/?height=268&theme-id=14781&default-tab=' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/team/coderhouse/pen/WvLOYJ/'>CSS - 2.2.1 Sintaxis</a> by Coderhouse (<a href='http://codepen.io/coderhouse'>@coderhouse</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
+```
 
 El modo de escribir CSS es el siguiente:
 
