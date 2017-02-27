@@ -42,10 +42,10 @@
 ## CSS - Modelo de Cajas & Ubicación de elementos
 
   * Definición
+  * Alto y Ancho
   * Bordes
   * Márgenes
   * Relleno
-  * Fondo
   * Posicionamiento
   * Float
   * Flexbox

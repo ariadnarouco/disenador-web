@@ -1,4 +1,15 @@
-# Modelo de cajas
+## CSS - Modelo de Cajas & Ubicación de elementos
+
+  * Definición
+  * Alto y Ancho
+  * Bordes
+  * Márgenes
+  * Relleno
+  * Posicionamiento
+  * Float
+  * Flexbox
+
+# Modelo de cajas (Definición)
 
 El modelo de caja o (box-model) es el que condiciona el diseño de las páginas web.
 
