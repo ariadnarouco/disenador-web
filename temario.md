@@ -15,12 +15,13 @@
 
 ## HTML
 
+  * Atributos tags
+    * ¿Qué son los atributos de un tag?
+    * ¿Para qué sirven?
+    * Atributos más utilizados
   * Listas
   * Tablas
   * Formularios
-  * ¿Qué son los atributos de un tag?
-  * ¿Para qué sirven?
-  * Atributos más utilizados
   * Enlaces
   * Imágenes
   * Audio y Videos

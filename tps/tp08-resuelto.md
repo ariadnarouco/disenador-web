@@ -1,20 +1,20 @@
 ## main.scss
 
-```css
+````css
 @import "reset";
 @import "variables";
 @import "header";
 @import "core";
 @import "footer";
-```
+````
 ## _reset.scss
 
-```css
+````css
 *{
     margin: 0;
     padding: 0;
 }
-```
+````
 
 ## _variables.scss
 

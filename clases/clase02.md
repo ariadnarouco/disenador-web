@@ -1,3 +1,58 @@
+# HTML
+  * Atributos tags
+    * ¿Qué son los atributos de un tag?
+    * ¿Para qué sirven?
+    * Atributos más utilizados
+  * Listas
+  * Tablas
+  * Formularios
+  * Enlaces
+  * Imágenes
+  * Audio y Videos
+
+# Atributos de las etiquetas
+### ¿Qué son los atributos de un tag?
+Las etiquetas en HTML poseen atributos, los cuales se pueden entender como "opciones" que dependeran de cada una de las etiquetas pero muchas de ellas son comunes a todas.
+
+### ¿Para qué sirven?
+Los atributos agregan información adicional respecto a la etiqueta, esta información va desde las caracteristicas de estilo que puede tener, los valores que puede tomar al ser seleccionado (en el caso de un formulario por ejemplo), dirección de destino de un vinculo, imágen u otro.
+
+### Atributos comunes a todas las etiquetas
+
+Son 4 los atributos que son transversales a todas las etiquetas HTML:
+
+#### id:
+El atributo id es utilizado para identificar individualmente un único elemento dentro de una página HTML. Existen dos razones principales por las cuales podríamos querer utilizar este atributo:
+
+* Si un elemento posee el atributo id, es posible identidicar exclusivamente ese elemento y su contenido.
+* Si posees 2 elementos con un mismo nombre dentro de una página web. Puedes utilizar el id para diferenciar entre ellos.
+
+`````html
+<div id="coderhouse">
+`````
+
+#### title
+El atributo título sugiere un titulo para el elmento.
+
+````html
+<div title="este es un título">
+````
+
+El comportamiento de este atributo dependera del elemento que lo contenga. Normalmente se despliega como un tooltip al pasar el cursor sobre el elemento o mientras este se carga.
+
+#### class
+El uso de clases es utilizado para asociar elemento con una hoja de estilos.
+Aprenderemos más sobre el uso de clases cuando veamos Cascading Style Sheet (CSS).
+
+Las clases pueden ser varias mientras estas se encuentren separadas por espacios.
+
+```html
+<div class="className1 className2 className3">
+```
+
+#### style
+El atruibuto de estilo se utiliza para dar reglas de estilo CSS directamente en el elemento CSS.
+
 # Listas
 
 HTML permite agrupar elementos que tienen más significado de forma conjunta. El menú de navegación de un sitio web por ejemplo está formado por un grupo de palabras. Aunque cada palabra por separado tiene sentido, de forma conjunta constituyen el menú de navegación de la página, por lo que su significado conjunto es mayor que por separado. Esto es denominado como listas
@@ -338,6 +393,10 @@ El elemento **optgroup** funciona como título de un conjunto de opciones, pero 
 </form>
 ```
 [Ejercicio Profesor Formulario](../ejercicios-profesores/ejercicios_2.md#2)
+
+
+
+
 
 # Enlaces
 
