@@ -65,13 +65,12 @@
   * ¿Qué es un diseño responsivo?
   * Pantallas en que enfocarse
   * Mobile-First
-  * Utilización dentro de un archivo CSS
-  * Utilización en la llamada desde el <head>
-  * Github
+  * Utilización, media queries
+  * ¿Qué es Git?
+  * ¿Qué es Github?
   * Crear una cuenta
   * Crear un repositorio
   * Clonar un repositorio
-  * Subir cambios al repositorio remoto
   * Trabajo Práctico :white_check_mark:
 
 ------------

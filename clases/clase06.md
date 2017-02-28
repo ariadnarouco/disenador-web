@@ -1,4 +1,16 @@
-# Responsive design
+# Diseño Responsivo, Media Queries, Git.Github
+
+  * ¿Qué es un diseño responsivo?
+  * Pantallas en que enfocarse
+  * Mobile-First
+  * Utilización, media queries
+  * ¿Qué es Git?
+  * ¿Qué es Github?
+  * Crear una cuenta
+  * Crear un repositorio
+  * Clonar un repositorio
+
+# ¿Qué es un diseño responsivo?
 
 Cuando se habla de Responsive Design o de Diseño Responsivo en una página web, se refiere a que el contenido de la página se adapta al tamaño de pantalla en donde accede nuestro usuario final, sin cambiar nuestro contenido del HTML original si no que más bien simplemente modificando el diseño en que mostramos este contenido. Esto a diferencia de antiguamente en donde al acceder desde un dispositivos móviles, muchos sitios web utilizaban la filosofía de redirigirnos a una versión móvil explisiva del sitio (e.g. httP://m.example.com) en donde los contenidos de la versión móvil y la versión de escritorio no eran los mismos además del trabajo que presenta mantener 2 o más versiones del mismo sitio web en paralelo.
 
@@ -6,7 +18,7 @@ Para eliminar dichas practicas, en CSS3 se nos incorpora los Media queries, para
 
 ![](../assets/responsive.gif)
 
-## Punto de corte más utilizados
+# Pantallas en que enfocarse
 
 Al utilizar media queries, surge la duda de cuales son los tamaños que debemos considerar para hacer los cambios de diseño. Aquí dejamos los estandares más comunes:
 
@@ -17,13 +29,13 @@ Al utilizar media queries, surge la duda de cuales son los tamaños que debemos 
 
 ![](../assets/Mobile First Web Design.png)
 
-## Mobile First
+# Mobile First
 
 Finalmente, tenemos el concepto de Mobile First.
 
 Con el fin de optimizar el uso de la red y la rapidez con la cual nuestros sitios web son renderizados en los dispositivos móviles, es que surge el concepto de Mobile First. Esto consiste en ir agregando/mostrando contenido a medida que el tamaño de la pantalla va creciendo, al contrario de un acercamiento tradicional a un diseño responsivo en donde nuestro sitio base va ocultando contenido a medida que accedemos a un dispositivo más pequeño. Si bien las diferencias en resultado visual no presentan diferencia alguna, el enfocarse en mobile first, la cantidad de contenido necesario para desplegar un sitio web en un móvil es menor lo que aumenta la percepción de velocidad del sitio por parte del usuario, entregando una mejor UX.
 
-# Media queries
+# Utilización, media queries
 
 Los media types permiten indicar una serie de estilos que se aplicarán según el tipo del medio, en algunas páginas, al ver el código fuente, nos encontramos algo como lo siguiente en su head
 
