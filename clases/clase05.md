@@ -1,6 +1,12 @@
-# Más Sobre Flexbox
+# Ubicación de elementos & más!
 
-### Propiedades para utilizar en Flexbox
+  * Propiedades de padres e hijos
+  * Gradientes en CSS
+  * Transiciones
+  * Transformación
+  * Animación en CSS
+
+### Propiedades de padres e hijos
 
 **Propiedades para aplicar en el contenedor flexible**
 

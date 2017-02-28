@@ -53,7 +53,6 @@
 
 ## CSS - Ubicación de elementos & más!
 
-  * Más sobre Flexbox
   * Propiedades de padres e hijos
   * Gradientes en CSS
   * Transiciones
